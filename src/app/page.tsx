@@ -5,6 +5,7 @@ import { Poppins } from "next/font/google";
 import GreenThingyWrapper from "@/components/animations/greenThingyanimation";
 import { buttonVariants } from "@/components/ui/button";
 import { HomeNavBar } from "@/components/general/home/navBar";
+import AboutSection from "@/components/general/home/aboutSection";
 // import { Globe } from "@/components/acernityComponents/featuresSections";
 import ScaleUp from "@/components/animations/scaleUp";
 const poppins = Poppins({
@@ -93,6 +94,8 @@ export default function Home() {
         </div>
       </FirstSection>
       <InfiniteMovingCardsTestemonials />
+
+      <AboutSection />
       {/* <ScaleUp><Globe /></ScaleUp> */}
     </div>
   );
