@@ -5,6 +5,7 @@ import Link from "next/link";
 import { FaLinkedin } from "react-icons/fa";
 import GreenThingyWrapper from "@/components/animations/greenThingyanimation";
 import { Button } from "@/components/ui/button";
+
 export function HomeNavBar() {
   return (
     <div className=" fixed glassy-nav top-0 w-[100%]">

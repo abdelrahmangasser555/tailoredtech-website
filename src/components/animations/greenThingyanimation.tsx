@@ -6,11 +6,11 @@ export default function GreenThingyWrapper({
   children,
   setState = null,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode | null;
   setState: React.Dispatch<React.SetStateAction<boolean>> | null;
 }) {
   const wrapperRef = useRef(null);
-  const inview = useInView(wrapperRef, { once: true });
+  const inview = useInView(wrapperRef, { once: true, amount: 0.5 });
   const controler1 = useAnimation();
   const controler2 = useAnimation();
 
@@ -26,7 +26,7 @@ export default function GreenThingyWrapper({
   }, [inview]);
 
   return (
-    <div className=" w-fit  relative overflow-hidden" ref={wrapperRef}>
+    <div className="  w-fit  relative overflow-hidden " ref={wrapperRef}>
       <motion.div
         variants={{
           initial: {
@@ -55,7 +55,7 @@ export default function GreenThingyWrapper({
         }}
         initial="initial"
         animate={controler2}
-        transition={{ duration: 0.25, ease: "easeIn" }}
+        transition={{ duration: 0.25, ease: "easeIn", delay: 0.25 }}
         className=" absolute top-4 bottom-4 left-0 right-0 w-full h-full bg-[#13ffaa] z-20 "
       ></motion.div>
     </div>

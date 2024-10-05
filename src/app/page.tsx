@@ -6,12 +6,14 @@ import GreenThingyWrapper from "@/components/animations/greenThingyanimation";
 import { buttonVariants } from "@/components/ui/button";
 import { HomeNavBar } from "@/components/general/home/navBar";
 import AboutSection from "@/components/general/home/aboutSection";
+import WeOffer from "@/components/general/home/weOffer";
 // import { Globe } from "@/components/acernityComponents/featuresSections";
 import ScaleUp from "@/components/animations/scaleUp";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: "400",
 });
+import { BackgroundBlur } from "@/components/animations/backgroundBlur";
 import { InfiniteMovingCardsTestemonials } from "@/components/general/home/testemonials";
 
 export default function Home() {
@@ -19,6 +21,7 @@ export default function Home() {
     <div className=" flex items-center justify-start flex-col min-h-screen bg-[#111] py-[10vh]">
       <HomeNavBar />
       <FirstSection>
+        <BackgroundBlur />
         <div className=" flex flex-col items-start justify-start p-5">
           <GreenThingyWrapper setState={null}>
             <h1
@@ -96,6 +99,7 @@ export default function Home() {
       <InfiniteMovingCardsTestemonials />
 
       <AboutSection />
+      <WeOffer />
       {/* <ScaleUp><Globe /></ScaleUp> */}
     </div>
   );

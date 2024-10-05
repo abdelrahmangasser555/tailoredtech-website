@@ -75,7 +75,15 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), addVariablesForColors],
+  plugins: [
+    require("tailwindcss-animate"),
+    addVariablesForColors,
+    require("daisyui"),
+  ],
+  daisyui: {
+    themes: ["light", "dark", "cupcake"],
+    darkTheme: false,
+  },
 };
 
 function addVariablesForColors({ addBase, theme }: any) {
