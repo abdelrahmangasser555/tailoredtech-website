@@ -9,6 +9,9 @@ const nextConfig = {
       "images.ctfassets.net",
       "img.daisyui.com",
       "deistor4v34pj.cloudfront.net",
+      "media-hbe1-1.cdn.whatsapp.net",
+      "web.whatsapp.com",
+      "www.geckoboard.com",
     ], // Add your allowed image domains here
   },
 };

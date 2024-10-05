@@ -44,19 +44,21 @@ export function ThreeDCardHome() {
         <div className="flex justify-between items-center mt-20">
           <CardItem
             translateZ={20}
-            translateX={-40}
-            as="button"
-            className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
-          >
-            <Link href="/contact">Contact us</Link>
-          </CardItem>
-          <CardItem
-            translateZ={20}
             translateX={40}
             as="button"
             className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
           >
             <Link href="/about">Learn more</Link>
+          </CardItem>
+          <CardItem
+            translateZ={20}
+            translateX={-40}
+            as="button"
+            className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+          >
+            <Link href="/contact" className=" text-white">
+              Contact us
+            </Link>
           </CardItem>
         </div>
       </CardBody>

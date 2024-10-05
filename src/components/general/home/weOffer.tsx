@@ -14,6 +14,10 @@ import { MdOutlineComputer } from "react-icons/md";
 import { HiOutlineLightBulb } from "react-icons/hi";
 import { IoCodeSlash } from "react-icons/io5";
 import { ThreeDCardHome } from "./StartUpCard";
+import { BsStars } from "react-icons/bs";
+import { GiHouseKeys } from "react-icons/gi";
+import { CiCloudOn } from "react-icons/ci";
+import { AnimatedTooltipHome } from "./managePeople";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: "400",
@@ -109,7 +113,52 @@ export default function WeOffer() {
       >
         <div className="w-[100%]">
           <ThreeDCardHome />
+          <BackgroundBlur />
         </div>
+      </CrissCross>
+      <CrissCross
+        title="Costum Software Solutions for Companies"
+        description={`
+        we will create a software solution that fits your company needs and requirements
+          ex : internal management software for a company that has multiple branches and departments
+        `}
+        benefits={[
+          "own your software",
+          "full customization",
+          "self hosting options",
+          "your software your rules",
+          "theming options",
+          "solve solutions",
+          "more ...",
+        ]}
+        features={[
+          "cloud hosting",
+          "customize  for your needs",
+          "management board",
+          "user management",
+          "data tracking",
+          "24/7 ai support",
+          "what ever you need",
+          "desktop version",
+          "mobile version",
+        ]}
+        featureIcons={[<CiCloudOn className=" text-blue-400" size={30} />]}
+        benifitsIcons={[
+          <BsStars className=" text-indigo-500" size={20} />,
+          <GiHouseKeys className=" text-[#13ffaa]" size={20} />,
+        ]}
+        mainIcon={[
+          <HiOutlineLightBulb className=" text-yellow-400" size={30} />,
+          <FaArrowRight className=" text-white" />,
+
+          <BsStars className=" text-indigo-600" size={30} />,
+          <FaArrowRight className=" text-white" />,
+          <MdOutlineComputer className=" text-[#13ffaa]" size={30} />,
+        ]}
+      >
+        {/* <div className="w-[100%]">
+          <ThreeDCardHome />
+        </div> */}
       </CrissCross>
     </div>
   );

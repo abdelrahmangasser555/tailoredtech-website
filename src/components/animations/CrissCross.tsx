@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 import { motion } from "framer-motion";
 import React from "react";
@@ -11,7 +12,7 @@ const poppins = Poppins({
 });
 
 type CrissCrossProps = {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   title: string;
   description: string;
   benefits: string[];
@@ -48,6 +49,7 @@ export function CrissCross({
         <GreenThingyWrapper setState={null}>
           <div className=" flex items-center justify-start gap-2 mb-2">
             {mainIcon &&
+              // eslint-disable-next-line @typescript-eslint/no-explicit-any
               mainIcon.map((icon: any, index: number) => {
                 return (
                   <p key={index} className=" inline-block">

@@ -8,7 +8,9 @@ import { HomeNavBar } from "@/components/general/home/navBar";
 import AboutSection from "@/components/general/home/aboutSection";
 import WeOffer from "@/components/general/home/weOffer";
 // import { Globe } from "@/components/acernityComponents/featuresSections";
+import ProjectsSection from "@/components/general/home/ProjectsSection";
 import ScaleUp from "@/components/animations/scaleUp";
+import FounderSection from "@/components/general/home/FounderSection";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: "400",
@@ -100,6 +102,8 @@ export default function Home() {
 
       <AboutSection />
       <WeOffer />
+      <ProjectsSection />
+      <FounderSection />
       {/* <ScaleUp><Globe /></ScaleUp> */}
     </div>
   );
