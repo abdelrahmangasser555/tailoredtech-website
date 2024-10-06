@@ -26,7 +26,7 @@ const poppins = Poppins({
 export default function WeOffer({ setState }, { setState: any }) {
   return (
     <div
-      className=" w-[70%] pb-[10vh]"
+      className=" md:w-[70%] sm:w-[95%] pb-[10vh]"
       id="weoffer"
       style={{ scrollMarginTop: "10vh" }}
     >

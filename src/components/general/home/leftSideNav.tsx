@@ -24,7 +24,7 @@ export default function LeftSideNav({ Links, activeLink, setActiveLink }) {
       <span
         className={` ${poppins.className} text-[50px] text-[white] font-extrabold  px-2 py-2`}
       >
-        T<span className="text-[#13ffaa] text-[30px]">t</span>
+        T<span className="text-[#13ffaa] text-[50px]">t.</span>
       </span>
       {Links?.map((link, index) => (
         <button

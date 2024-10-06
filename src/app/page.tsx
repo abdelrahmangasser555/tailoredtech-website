@@ -21,6 +21,8 @@ const poppins = Poppins({
 });
 import { BackgroundBlur } from "@/components/animations/backgroundBlur";
 import { InfiniteMovingCardsTestemonials } from "@/components/general/home/testemonials";
+import FinalCallAction from "@/components/general/home/finalCallAction";
+import { link } from "fs";
 
 export default function Home() {
   const [activeLink, setActiveLink] = useState(0);
@@ -46,12 +48,21 @@ export default function Home() {
       link: "founders",
     },
     {
+      name: "Take action",
+      link: "action",
+    },
+    {
       name: "Footer",
       link: "footer",
     },
   ];
   return (
-    <div className=" flex items-center justify-start flex-col min-h-screen bg-[#111] pt-[10vh]">
+    <div
+      className=" flex items-center justify-start flex-col min-h-screen bg-[#111] pt-[10vh]"
+      style={{
+        scrollBehavior: "smooth",
+      }}
+    >
       <HomeNavBar />
       <LeftSideNav
         Links={Mylinks}
@@ -140,6 +151,7 @@ export default function Home() {
       <WeOffer setState={setActiveLink} />
       <ProjectsSection setState={setActiveLink} />
       <FounderSection setState={setActiveLink} />
+      <FinalCallAction setState={setActiveLink} />
       <Footer setState={setActiveLink} />
       {/* <ScaleUp><Globe /></ScaleUp> */}
     </div>

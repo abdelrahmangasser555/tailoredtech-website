@@ -11,7 +11,7 @@ export default function Footer({ setState }, { setState: any }) {
     <footer
       className="bg-gray-900 text-white py-10 w-full"
       id="footer"
-      style={{ scrollMarginTop: "10vh" }}
+      style={{ scrollMarginTop: "10vh", zIndex: 10000 }}
     >
       <div className="container mx-auto flex justify-between items-start">
         {/* Logo Section */}
@@ -26,7 +26,7 @@ export default function Footer({ setState }, { setState: any }) {
               }}
             >
               <hr />
-              <GreenThingyWrapper setState={setState} index={5}>
+              <GreenThingyWrapper setState={setState} index={6}>
                 <span
                   className={` ${poppins.className} text-[100px] text-[white] font-extrabold`}
                 >

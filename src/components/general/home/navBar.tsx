@@ -27,7 +27,10 @@ export function HomeNavBar() {
           <FaLinkedin />
         </Link>
       </div>
-      <EncryptButton TARGET_TEXT="let's Talk" />
+      <EncryptButton
+        TARGET_TEXT="let's Talk"
+        link="https://calendly.com/abdelrahmangasser2023/software-development-consultation?month=2024-10&date=2024-10-08"
+      />
     </div>
   );
 }

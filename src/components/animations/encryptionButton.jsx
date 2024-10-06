@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { FiLock } from "react-icons/fi";
 import { motion } from "framer-motion";
 import { AiOutlineCode } from "react-icons/ai";
+import { useRouter } from "next/navigation";
 
 const Example = () => {
   return (
@@ -16,8 +17,12 @@ const SHUFFLE_TIME = 50;
 
 const CHARS = "!@#$%^&*():{};|,.<>/?";
 
-export const EncryptButton = ({ TARGET_TEXT = "Let's Talk" }) => {
+export const EncryptButton = ({ TARGET_TEXT = "Let's Talk", link = "#" }) => {
   const intervalRef = useRef(null);
+  const navigate = useRouter();
+  function navigatetoLink() {
+    navigate.push(link);
+  }
 
   const [text, setText] = useState(TARGET_TEXT);
 
@@ -63,6 +68,7 @@ export const EncryptButton = ({ TARGET_TEXT = "Let's Talk" }) => {
       }}
       onMouseEnter={scramble}
       onMouseLeave={stopScramble}
+      onClick={navigatetoLink}
       className="group relative overflow-hidden rounded-lg border-[1px] border-neutral-500 bg-neutral-700 px-4 py-2 font-mono font-medium uppercase text-neutral-300 transition-colors hover:text-[#13ffaa]"
     >
       <div className="relative z-10 flex items-center gap-2">

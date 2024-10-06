@@ -14,6 +14,8 @@ import { FaCloud } from "react-icons/fa";
 import { BsSuitDiamondFill } from "react-icons/bs";
 import { MdOutlineDraw } from "react-icons/md";
 import { FaHeart } from "react-icons/fa";
+import { BsSuitClub } from "react-icons/bs";
+import { FaLaptopCode } from "react-icons/fa";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: "400",
@@ -98,6 +100,35 @@ export default function FounderSection({ setState }, { setState: any }) {
         </div>
       </CrissCrossFounder>
       <CrissCrossFounder
+        title="Fares Wael"
+        description={
+          "I am front end developer who like making designs come to live and deliver value added for costumers"
+        }
+        github="https://github.com/faresw1"
+        linkedin="www.linkedin.com/in/fares-wael-1b0464292"
+        instagram="https://www.instagram.com/fares_wael01?igsh=MTQ4ZnRkZmNwa3hkaA%3D%3D&utm_source=qr"
+        facebook="https://www.facebook.com/profile.php?id=100086664481139&mibextid=LQQJ4d"
+        email="faresacademy2006@gmail.com"
+        mainIcon={[
+          // eslint-disable-next-line react/jsx-key
+
+          <FaLaptopCode className="text-blue-500 text-4xl" />,
+          <BsSuitClub className="text-[#13ffaa] text-4xl" />,
+        ]}
+        roles={["UI/UX developer", "Creative Designer"]}
+      >
+        <div className=" w-[100%] min-w-[40vw]">
+          <BackgroundBlur />
+          <Image
+            src="https://deistor4v34pj.cloudfront.net/2024-10-06T16-32-45.506Z-fares black.jpg"
+            alt="jomana emad picture"
+            className="rounded-full h-50 w-50 md:ml-[10vw] sm:ml-0"
+            width={500}
+            height={500}
+          />
+        </div>
+      </CrissCrossFounder>
+      <CrissCrossFounder
         title="Jomana Emad"
         description={
           "I am UI/UX designer with a passion for creating something worth looking at"
@@ -113,13 +144,14 @@ export default function FounderSection({ setState }, { setState: any }) {
           <FaHeart className="text-error text-4xl" />,
         ]}
         roles={["UI/UX developer", "Creative Designer"]}
+        reverse
       >
         <div className=" w-[100%] min-w-[40vw]">
           <BackgroundBlur />
           <Image
             src="https://deistor4v34pj.cloudfront.net/2024-10-06T05-43-53.507Z-jomana image.jpg"
             alt="jomana emad picture"
-            className="rounded-full h-50 w-50 md:ml-[10vw] sm:ml-0"
+            className="rounded-full h-50 w-50 "
             width={500}
             height={500}
           />

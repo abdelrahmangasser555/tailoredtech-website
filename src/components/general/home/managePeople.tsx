@@ -18,6 +18,13 @@ const people = [
   },
   {
     id: 3,
+    name: "Fares wael",
+    designation: "Co-founder  + Front end developer",
+    image:
+      "https://media-hbe1-1.cdn.whatsapp.net/v/t61.24694-24/417662875_405215412094465_2228147333160501080_n.jpg?ccb=11-4&oh=01_Q5AaIKzeo_2ooHDyIYCuJ5CeJdrD9wewVrKGd2kpLqrpySkr&oe=670FC253&_nc_sid=5e03e0&_nc_cat=107",
+  },
+  {
+    id: 4,
     name: "Jomana emad",
     designation: "UI/UX Designer",
     image:
