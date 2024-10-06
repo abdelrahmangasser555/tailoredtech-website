@@ -18,7 +18,7 @@ export function Stacks({
   stacks,
 }: {
   stacks: string[];
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }) {
   return (
     <div className="flex flex-col justify-start items-start space-y-4 mb-2">

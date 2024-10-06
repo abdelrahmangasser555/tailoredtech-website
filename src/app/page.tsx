@@ -1,3 +1,5 @@
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import FirstSection from "@/components/general/home/FirstSection";
@@ -11,6 +13,8 @@ import WeOffer from "@/components/general/home/weOffer";
 import ProjectsSection from "@/components/general/home/ProjectsSection";
 import ScaleUp from "@/components/animations/scaleUp";
 import FounderSection from "@/components/general/home/FounderSection";
+import LeftSideNav from "@/components/general/home/leftSideNav";
+import Footer from "@/components/general/home/fotter";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: "400",
@@ -19,13 +23,45 @@ import { BackgroundBlur } from "@/components/animations/backgroundBlur";
 import { InfiniteMovingCardsTestemonials } from "@/components/general/home/testemonials";
 
 export default function Home() {
+  const [activeLink, setActiveLink] = useState(0);
+  const Mylinks = [
+    {
+      name: "Main",
+      link: "main",
+    },
+    {
+      name: "About",
+      link: "about",
+    },
+    {
+      name: "We Offer",
+      link: "weoffer",
+    },
+    {
+      name: "Projects",
+      link: "projects",
+    },
+    {
+      name: "Founders",
+      link: "founders",
+    },
+    {
+      name: "Footer",
+      link: "footer",
+    },
+  ];
   return (
-    <div className=" flex items-center justify-start flex-col min-h-screen bg-[#111] py-[10vh]">
+    <div className=" flex items-center justify-start flex-col min-h-screen bg-[#111] pt-[10vh]">
       <HomeNavBar />
-      <FirstSection>
+      <LeftSideNav
+        Links={Mylinks}
+        activeLink={activeLink}
+        setActiveLink={setActiveLink}
+      />
+      <FirstSection setNav={setActiveLink}>
         <BackgroundBlur />
         <div className=" flex flex-col items-start justify-start p-5">
-          <GreenThingyWrapper setState={null}>
+          <GreenThingyWrapper setState={setActiveLink} index={0}>
             <h1
               className={` ${poppins.className} text-[100px] text-[white] font-extrabold`}
               style={{
@@ -100,10 +136,11 @@ export default function Home() {
       </FirstSection>
       <InfiniteMovingCardsTestemonials />
 
-      <AboutSection />
-      <WeOffer />
-      <ProjectsSection />
-      <FounderSection />
+      <AboutSection setState={setActiveLink} />
+      <WeOffer setState={setActiveLink} />
+      <ProjectsSection setState={setActiveLink} />
+      <FounderSection setState={setActiveLink} />
+      <Footer setState={setActiveLink} />
       {/* <ScaleUp><Globe /></ScaleUp> */}
     </div>
   );

@@ -18,6 +18,27 @@
   align-items: center;
 }
 
+.left-glassy-nav {
+  background: transparent; /* Slightly more opaque for visibility */
+  backdrop-filter: blur(25px); /* Increased blur for more glass effect */
+
+  margin: 0; /* Removed margin for fixed position */
+  position: fixed; /* Stick to the top */
+  top: 10vh;
+  left: 0;
+  width: 5%; /* Full width */
+  z-index: 1000; /* Ensure it stays above other elements */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .left-glassy-nav {
+    display: none;
+  }
+}
+
 .glassy-container {
   background-color: transparent; /* Slightly opaque white */
   border-radius: 10px; /* Rounded corners */

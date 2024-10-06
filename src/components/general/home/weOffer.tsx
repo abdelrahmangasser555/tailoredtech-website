@@ -23,13 +23,17 @@ const poppins = Poppins({
   weight: "400",
 });
 
-export default function WeOffer() {
+export default function WeOffer({ setState }, { setState: any }) {
   return (
-    <div className=" w-[70%] pb-[10vh]">
+    <div
+      className=" w-[70%] pb-[10vh]"
+      id="weoffer"
+      style={{ scrollMarginTop: "10vh" }}
+    >
       <BackgroundBlur />
       <div className="hr-with-text mb-5">
         <hr />
-        <GreenThingyWrapper setState={null}>
+        <GreenThingyWrapper setState={setState} index={2}>
           <span
             className={` ${poppins.className} text-[100px] text-[white] font-extrabold`}
           >
@@ -67,7 +71,7 @@ export default function WeOffer() {
           "24/7 ai support",
           "more ...",
         ]}
-        featureIcons={[<FiGlobe />, <FiGlobe />, <FiGlobe />]}
+        featureIcons={[<FiGlobe />]}
         mainIcon={[
           <LuFileSpreadsheet className="  text-error" size={30} />,
           <FaArrowRight className=" text-white" />,
@@ -102,7 +106,7 @@ export default function WeOffer() {
           "innovation",
           "more ...",
         ]}
-        featureIcons={[<FiGlobe />, <FiGlobe />, <FiGlobe />]}
+        featureIcons={[<FiGlobe />]}
         mainIcon={[
           <HiOutlineLightBulb className=" text-yellow-400" size={30} />,
           <FaArrowRight className=" text-white" />,

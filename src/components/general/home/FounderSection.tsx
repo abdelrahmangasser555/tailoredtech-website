@@ -12,18 +12,20 @@ import { BsSuitSpade } from "react-icons/bs";
 import { GiHorseHead } from "react-icons/gi";
 import { FaCloud } from "react-icons/fa";
 import { BsSuitDiamondFill } from "react-icons/bs";
+import { MdOutlineDraw } from "react-icons/md";
+import { FaHeart } from "react-icons/fa";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: "400",
 });
 
-export default function FounderSection() {
+export default function FounderSection({ setState }, { setState: any }) {
   return (
-    <div className=" w-[70%]">
+    <div className=" w-[70%]" id="founders" style={{ scrollMarginTop: "10vh" }}>
       <BackgroundBlur />
       <div className="hr-with-text mb-5">
         <hr />
-        <GreenThingyWrapper setState={null}>
+        <GreenThingyWrapper setState={setState} index={4}>
           <span
             className={` ${poppins.className} text-[100px] text-[white] font-extrabold`}
           >
@@ -57,7 +59,7 @@ export default function FounderSection() {
           <Image
             src="https://deistor4v34pj.cloudfront.net/2024-10-05T17-55-36.919Z-black and white me.jpg"
             alt="Abdelrahman Gasser"
-            className="rounded-full h-50 w-50 ml-[10vw]"
+            className="rounded-full h-50 w-50 md:ml-[10vw] sm:ml-0"
             width={500}
             height={500}
           />
@@ -80,16 +82,44 @@ export default function FounderSection() {
           // eslint-disable-next-line react/jsx-key
           <GiHorseHead className="text-blue-700 text-4xl" />,
           <FaCloud className="text-[#13ffaa] text-4xl" />,
-          <BsSuitDiamondFill className="text-error text-4xl" />,
+          <BsSuitDiamondFill className=" text-teal-200 text-4xl" />,
         ]}
         roles={["Dev ops", "Entrepreneur", "Co-Founder"]}
         reverse
       >
         <div className=" w-[100%] min-w-[40vw]">
           <Image
-            src="https://deistor4v34pj.cloudfront.net/2024-10-05T17-55-36.919Z-black and white me.jpg"
+            src="https://deistor4v34pj.cloudfront.net/2024-10-06T05-39-06.931Z-joe black image.jpg"
             alt="Abdelrahman Gasser"
             className="rounded-full h-50 w-50"
+            width={500}
+            height={500}
+          />
+        </div>
+      </CrissCrossFounder>
+      <CrissCrossFounder
+        title="Jomana Emad"
+        description={
+          "I am UI/UX designer with a passion for creating something worth looking at"
+        }
+        linkedin="https://www.linkedin.com/in/abdelrahman-gasser/"
+        instagram="https"
+        facebook="https"
+        email="mailto"
+        mainIcon={[
+          // eslint-disable-next-line react/jsx-key
+          <MdOutlineDraw className="text-yellow-500 text-4xl" />,
+
+          <FaHeart className="text-error text-4xl" />,
+        ]}
+        roles={["UI/UX developer", "Creative Designer"]}
+      >
+        <div className=" w-[100%] min-w-[40vw]">
+          <BackgroundBlur />
+          <Image
+            src="https://deistor4v34pj.cloudfront.net/2024-10-06T05-43-53.507Z-jomana image.jpg"
+            alt="jomana emad picture"
+            className="rounded-full h-50 w-50 md:ml-[10vw] sm:ml-0"
             width={500}
             height={500}
           />

@@ -5,14 +5,13 @@ import Link from "next/link";
 import { FaLinkedin } from "react-icons/fa";
 import GreenThingyWrapper from "@/components/animations/greenThingyanimation";
 import { Button } from "@/components/ui/button";
-
+import { EncryptButton } from "../../animations/encryptionButton";
 export function HomeNavBar() {
   return (
-    <div className=" fixed glassy-nav top-0 w-[100%]">
+    <div className=" fixed glassy-nav top-0 w-[100%] h-[10vh]">
       <div className="flex items-center space-x-4">
         <Link
-          href="
-            "
+          href="https://github.com/abdelrahmangasser555"
           target="_blank"
           rel="noopener noreferrer"
           className="text-xl text-[#13ffaa]"
@@ -20,8 +19,7 @@ export function HomeNavBar() {
           <FaGithub />
         </Link>
         <Link
-          href="
-            "
+          href="https://www.linkedin.com/in/abdelrahman-gasser-74571127b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
           target="_blank"
           rel="noopener noreferrer"
           className="text-xl text-[#13ffaa]"
@@ -29,9 +27,7 @@ export function HomeNavBar() {
           <FaLinkedin />
         </Link>
       </div>
-      <GreenThingyWrapper setState={null}>
-        <Button className="text-xl">Contact</Button>
-      </GreenThingyWrapper>
+      <EncryptButton TARGET_TEXT="let's Talk" />
     </div>
   );
 }

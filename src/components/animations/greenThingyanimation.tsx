@@ -5,25 +5,34 @@ import { useAnimation, useInView, motion } from "framer-motion";
 export default function GreenThingyWrapper({
   children,
   setState = null,
+  index = 0,
 }: {
   children: React.ReactNode | null;
-  setState: React.Dispatch<React.SetStateAction<boolean>> | null;
+  setState: React.Dispatch<React.SetStateAction<boolean | number>> | null;
+  index?: number;
 }) {
   const wrapperRef = useRef(null);
+  const alwaysInView = useRef(null);
   const inview = useInView(wrapperRef, { once: true, amount: 0.5 });
+  const inViewAlways = useInView(alwaysInView, { amount: 0.1 });
   const controler1 = useAnimation();
   const controler2 = useAnimation();
 
   useEffect(() => {
     if (inview) {
-      console.log("inview", inview);
       controler1.start("visible");
       controler2.start("visible");
-      if (setState) {
-        setState(true);
-      }
     }
   }, [inview]);
+
+  React.useEffect(() => {
+    if (inViewAlways) {
+      if (setState) {
+        console.log("inViewAlways", inViewAlways);
+        setState(index);
+      }
+    }
+  }, [inViewAlways]);
 
   return (
     <div className="  w-fit  relative overflow-hidden " ref={wrapperRef}>
@@ -41,6 +50,7 @@ export default function GreenThingyWrapper({
         initial="initial"
         animate={controler1}
         transition={{ duration: 0.5, delay: 0.25 }}
+        ref={alwaysInView}
       >
         {children}
       </motion.div>

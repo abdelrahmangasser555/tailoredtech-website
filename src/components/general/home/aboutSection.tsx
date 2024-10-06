@@ -9,12 +9,17 @@ const poppins = Poppins({
   subsets: ["latin"],
   weight: "400",
 });
-export default function AboutSection() {
+export default function AboutSection({ setState }: { setState: any }) {
   return (
-    <div className=" w-[70%] ">
+    <div
+      className=" w-[70%] "
+      id="about"
+      // I want when the user scroll to this section he opens on the top of that section
+      style={{ scrollMarginTop: "10vh" }}
+    >
       <BackgroundBlur />
       <div className="hr-with-text">
-        <GreenThingyWrapper setState={null}>
+        <GreenThingyWrapper setState={setState} index={1}>
           <span
             className={` ${poppins.className} text-[100px] text-[white] font-extrabold`}
           >
@@ -45,26 +50,24 @@ export default function AboutSection() {
               >
                 T
               </span>
-              ailored tech dolor sit amet consectetur adipisicing elit. Eaque
-              beatae mollitia architecto atque dicta non quae est officiis,
-              cumque, deserunt autem tenetur sed nisi excepturi aut porro at
-              veritatis temporibus.
+              ailored tech create cutting edge tailored software solution for
+              your business from idea to coding to production to scaling we are
+              with you all the way to reach the goal of your business.
             </p>
           </GreenThingyWrapper>
           <GreenThingyWrapper setState={null}>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-              beatae mollitia architecto atque dicta non quae est officiis,
-              cumque, deserunt autem tenetur sed nisi excepturi aut porro at
-              veritatis temporibus.
+              we helped many businesses create software either it was a SaaS or
+              optimization for there company or automating manual processes we
+              help you focus on your business and we take care of the tech.
             </p>
           </GreenThingyWrapper>
           <GreenThingyWrapper setState={null}>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-              beatae mollitia architecto atque dicta non quae est officiis,
-              cumque, deserunt autem tenetur sed nisi excepturi aut porro at
-              veritatis temporibus.
+              we are a team of developers that have experience in many
+              technologies and we are always learning and adapting to the new
+              technologies so we can provide you with the best solution for your
+              business.
             </p>
           </GreenThingyWrapper>
           <button className="p-[3px] relative">
