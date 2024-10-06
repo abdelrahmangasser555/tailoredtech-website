@@ -1,6 +1,9 @@
 {
   "extends": ["next/core-web-vitals", "next/typescript"],
   "rules": {
-    "no-unused-vars": "off" // Disable globally
+    "no-unused-vars": [
+      "warn", // Change to "off" if you want to disable entirely
+      { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" } // Ignore vars starting with _
+    ]
   }
 }
