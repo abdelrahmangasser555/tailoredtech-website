@@ -25,7 +25,7 @@ export default function FinalCallAction({ setState }, { setState: any }) {
         <hr />
         <GreenThingyWrapper setState={setState} index={5}>
           <span
-            className={` ${poppins.className} text-[100px] text-[white] font-extrabold`}
+            className={` mobileHeadings ${poppins.className} text-[100px] text-[white] font-extrabold`}
           >
             Take action
             <span className="text-[#13ffaa]">.</span>
@@ -34,7 +34,7 @@ export default function FinalCallAction({ setState }, { setState: any }) {
       </div>
       <div className="flex flex-col items-center justify-center mt-10 p-5">
         <span
-          className={`${poppins.className} text-[50px] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#13ffaa] via-[#ff681d] to-[#37cdbe] animate-text mb-6`}
+          className={` mobileHeadings text-center ${poppins.className} text-[50px] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#13ffaa] via-[#ff681d] to-[#37cdbe] animate-text mb-6`}
           style={{
             fontWeight: "900",
           }}
@@ -56,7 +56,7 @@ export default function FinalCallAction({ setState }, { setState: any }) {
             target="_blank"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-[#13ffaa] rounded-lg" />
-            <div className="px-8 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
+            <div className="px-8 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent text-center">
               yes let's talk 😃
             </div>
             <motion.span

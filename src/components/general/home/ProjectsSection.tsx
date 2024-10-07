@@ -20,12 +20,16 @@ const poppins = Poppins({
 
 export default function ProjectsSection({ setState }, { setState: any }) {
   return (
-    <div className=" w-[70%]" id="projects" style={{ scrollMarginTop: "10vh" }}>
+    <div
+      className=" md:w-[70%] sm:w-[95%]  px-3 "
+      id="projects"
+      style={{ scrollMarginTop: "10vh" }}
+    >
       <BackgroundBlur />
       <div className="hr-with-text mb-5">
         <GreenThingyWrapper setState={setState} index={3}>
           <span
-            className={` ${poppins.className} text-[100px] text-[white] font-extrabold`}
+            className={` mobileHeadings ${poppins.className} text-[100px] text-[white] font-extrabold`}
           >
             Projects
             <span className="text-[#13ffaa]">.</span>

@@ -23,13 +23,17 @@ const poppins = Poppins({
 
 export default function FounderSection({ setState }, { setState: any }) {
   return (
-    <div className=" w-[70%]" id="founders" style={{ scrollMarginTop: "10vh" }}>
+    <div
+      className=" md:w-[70%] sm:w-[95%] px-5 "
+      id="founders"
+      style={{ scrollMarginTop: "10vh" }}
+    >
       <BackgroundBlur />
       <div className="hr-with-text mb-5">
         <hr />
         <GreenThingyWrapper setState={setState} index={4}>
           <span
-            className={` ${poppins.className} text-[100px] text-[white] font-extrabold`}
+            className={`mobileHeadings ${poppins.className} text-[100px] text-[white] font-extrabold`}
           >
             Founders
             <span className="text-[#13ffaa]">.</span>

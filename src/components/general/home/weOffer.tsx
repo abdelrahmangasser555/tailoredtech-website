@@ -35,7 +35,7 @@ export default function WeOffer({ setState }, { setState: any }) {
         <hr />
         <GreenThingyWrapper setState={setState} index={2}>
           <span
-            className={` ${poppins.className} text-[100px] text-[white] font-extrabold`}
+            className={` mobileHeadings ${poppins.className} md:text-[100px] sm:text-[30px]  text-[white] font-extrabold`}
           >
             We Offer
             <span className="text-[#13ffaa]">.</span>

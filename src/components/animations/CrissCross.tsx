@@ -35,7 +35,7 @@ export function CrissCross({
 }: CrissCrossProps) {
   return (
     <div
-      className={` flex items-start justify-between ${
+      className={` displayInColumn flex items-start justify-between ${
         reverse && "flex-row-reverse"
       }`}
     >

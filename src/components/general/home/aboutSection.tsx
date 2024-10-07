@@ -12,7 +12,7 @@ const poppins = Poppins({
 export default function AboutSection({ setState }: { setState: any }) {
   return (
     <div
-      className=" w-[70%] "
+      className=" md:w-[70%]  sm:w-[95%] px-5"
       id="about"
       // I want when the user scroll to this section he opens on the top of that section
       style={{ scrollMarginTop: "10vh" }}
@@ -21,7 +21,7 @@ export default function AboutSection({ setState }: { setState: any }) {
       <div className="hr-with-text">
         <GreenThingyWrapper setState={setState} index={1}>
           <span
-            className={` ${poppins.className} text-[100px] text-[white] font-extrabold`}
+            className={` mobileHeadings ${poppins.className} text-[100px] text-[white] font-extrabold`}
           >
             About
             <span className="text-[#13ffaa]">.</span>
@@ -29,7 +29,7 @@ export default function AboutSection({ setState }: { setState: any }) {
         </GreenThingyWrapper>
         <hr />
       </div>
-      <div className=" flex items-start justify-center h-[100%] ">
+      <div className=" displayInColumn flex  items-start justify-center h-[100%] ">
         <div
           className=" flex items-start justify-start flex-col text-white gap-y-5"
           style={{
@@ -77,7 +77,7 @@ export default function AboutSection({ setState }: { setState: any }) {
             </div>
           </button>
         </div>
-        <div className=" flex items-center justify-start flex-col h-[100%] ml-10 w-[300px] translate-y-[-40px]">
+        <div className=" with-margin-top flex items-center justify-start flex-col h-[100%] md:ml-10 sm:ml-0 w-[300px] md:translate-y-[-40px] md:mt-0 sm:mt-10">
           <h1
             className="text-[#13ffaa] text-4xl font-extrabold text-nowrap mb-3"
             style={{

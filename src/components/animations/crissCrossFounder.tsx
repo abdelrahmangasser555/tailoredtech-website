@@ -56,7 +56,7 @@ export function CrissCrossFounder({
 }: CrissCrossProps) {
   return (
     <div
-      className={` flex items-center justify-between w-[100%]  ${
+      className={` displayInColumnReverse flex items-center justify-between w-[100%]  ${
         reverse && "flex-row-reverse"
       }`}
     >
