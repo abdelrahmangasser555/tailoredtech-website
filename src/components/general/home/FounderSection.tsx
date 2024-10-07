@@ -15,7 +15,9 @@ import { BsSuitDiamondFill } from "react-icons/bs";
 import { MdOutlineDraw } from "react-icons/md";
 import { FaHeart } from "react-icons/fa";
 import { BsSuitClub } from "react-icons/bs";
+import { BsSuitHeart } from "react-icons/bs";
 import { FaLaptopCode } from "react-icons/fa";
+import { BsSuitDiamond } from "react-icons/bs";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: "400",
@@ -59,7 +61,12 @@ export default function FounderSection({ setState }, { setState: any }) {
           <IoCodeSlashOutline className="text-[#13ffaa] text-4xl" />,
           <BsSuitSpade className="text-white text-4xl" />,
         ]}
-        roles={["Full Stack Developer", "Entrepreneur", "Founder"]}
+        roles={[
+          "Full Stack Developer",
+          "Entrepreneur",
+          "Founder",
+          "olympic gymnast 🤸‍♂️",
+        ]}
       >
         <div className=" w-[100%] min-w-[40vw]">
           <Image
@@ -76,21 +83,17 @@ export default function FounderSection({ setState }, { setState: any }) {
         description={
           "I am a full stack developer and entrepreneur I like building cool web apps with ai "
         }
-        linkedin="https://www.linkedin.com/in/abdelrahman-gasser/"
-        github="https"
-        twitter="https"
-        instagram="https"
-        facebook="https"
-        youtube="https"
-        website="https"
-        email="mailto"
+        linkedin="https://www.linkedin.com/in/yusuf-emad-26561b1b2"
+        github="https://github.com/YusufEmad04"
+        facebook="https://www.facebook.com/yuzarcif.putivar?mibextid=ZbWKwL"
+        email="yusufy2004@gmail.com"
         mainIcon={[
           // eslint-disable-next-line react/jsx-key
           <GiHorseHead className="text-blue-700 text-4xl" />,
           <FaCloud className="text-[#13ffaa] text-4xl" />,
-          <BsSuitDiamondFill className=" text-teal-200 text-4xl" />,
+          <BsSuitDiamond className=" text-teal-200 text-4xl" />,
         ]}
-        roles={["Dev ops", "Entrepreneur", "Co-Founder"]}
+        roles={["Dev ops", "Entrepreneur", "Co-Founder", "Cat lover 🐱"]}
         reverse
       >
         <div className=" w-[100%] min-w-[40vw]">
@@ -106,7 +109,7 @@ export default function FounderSection({ setState }, { setState: any }) {
       <CrissCrossFounder
         title="Fares Wael"
         description={
-          "I am front end developer who like making designs come to live and deliver value added for costumers"
+          "I am front end developer who like making designs come to live and deliver value added for costumers and I bench press 50kg "
         }
         github="https://github.com/faresw1"
         linkedin="www.linkedin.com/in/fares-wael-1b0464292"
@@ -119,13 +122,18 @@ export default function FounderSection({ setState }, { setState: any }) {
           <FaLaptopCode className="text-blue-500 text-4xl" />,
           <BsSuitClub className="text-[#13ffaa] text-4xl" />,
         ]}
-        roles={["UI/UX developer", "Creative Designer"]}
+        roles={[
+          "Front end developer",
+          "Co-Founder",
+          "UI/UX developer",
+          "Gym Rat 🏋️‍♂️",
+        ]}
       >
         <div className=" w-[100%] min-w-[40vw]">
           <BackgroundBlur />
           <Image
-            src="https://deistor4v34pj.cloudfront.net/2024-10-06T16-32-45.506Z-fares black.jpg"
-            alt="jomana emad picture"
+            src="https://deistor4v34pj.cloudfront.net/2024-10-07T18-52-29.525Z-fares version2.jpg"
+            alt="fares wael picture"
             className="rounded-full h-50 w-50 md:ml-[10vw] sm:ml-0"
             width={500}
             height={500}
@@ -145,7 +153,7 @@ export default function FounderSection({ setState }, { setState: any }) {
           // eslint-disable-next-line react/jsx-key
           <MdOutlineDraw className="text-yellow-500 text-4xl" />,
 
-          <FaHeart className="text-error text-4xl" />,
+          <BsSuitHeart className="text-error text-4xl" />,
         ]}
         roles={["UI/UX developer", "Creative Designer"]}
         reverse

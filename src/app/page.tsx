@@ -83,7 +83,7 @@ export default function Home() {
               <span className="text-[#13ffaa]">.</span>
             </h1>
             <p
-              className={`${poppins.className} text-2xl  pl-3 text-white opacity-60`}
+              className={`  ${poppins.className} text-2xl  pl-3 text-white opacity-70`}
               style={{
                 fontWeight: "400",
               }}
@@ -125,8 +125,8 @@ export default function Home() {
           </GreenThingyWrapper>
           <GreenThingyWrapper setState={null}>
             <p className=" text-white md:max-w-[60%] sm:w-[100%] pl-4 mt-5">
-              we created costume solutions for large multi national companies in
-              different sectors and we are ready to help you with your next
+              we created software solutions for large multi national companies
+              in different sectors and we are ready to help you with your next
               project
             </p>
           </GreenThingyWrapper>

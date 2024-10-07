@@ -66,7 +66,7 @@ export default function GreenThingyWrapper({
         initial="initial"
         animate={controler2}
         transition={{ duration: 0.25, ease: "easeIn", delay: 0.25 }}
-        className=" absolute top-4 bottom-4 left-0 right-0 w-full h-full bg-[#13ffaa] z-20 "
+        className=" rounded-in-mobile absolute top-4 bottom-4 left-0 right-0 w-full h-full bg-[#13ffaa] z-20 sm:rounded-md md:rounded-none "
       ></motion.div>
     </div>
   );

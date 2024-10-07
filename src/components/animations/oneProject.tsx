@@ -50,7 +50,7 @@ export default function OneProject({
           viewport={{ once: true }}
         >
           <CardContainer className=" inter-var">
-            <CardBody className=" h-[100%] mb-[-40px]">
+            <CardBody className=" h-[100%] mb-[-40px] px-10">
               <CardItem
                 translateZ="100"
                 translateY={-20}
@@ -63,7 +63,7 @@ export default function OneProject({
                   <Image
                     src={image}
                     alt={name}
-                    className="w-[300px] "
+                    className="w-[300px] rounded-lg "
                     width={80}
                     height={80}
                   />

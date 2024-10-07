@@ -44,7 +44,7 @@ export default function WeOffer({ setState }, { setState: any }) {
       </div>
 
       <CrissCross
-        title="Digitalization Paper Work to Software"
+        title="Digitalize Paper Work to Software"
         description={`
         we create softwares that digitalize your paper work to have more control analytics record tracking and more 
         
