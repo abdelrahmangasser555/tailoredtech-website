@@ -37,6 +37,10 @@
   .left-glassy-nav {
     display: none;
   }
+
+  .mobileHeadings {
+    font-size: 40px;
+  }
 }
 
 .glassy-container {

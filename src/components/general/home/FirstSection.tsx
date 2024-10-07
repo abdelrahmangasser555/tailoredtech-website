@@ -14,7 +14,7 @@ export default function FirstSection({
       id="main"
     >
       <div className=" z-5 w-[100%] h-[100%]">{children}</div>
-      <div className=" absolute  top-0 left-[40%] inset-0 w-[40vw]  flex items-center flex-wrap ">
+      <div className=" sm:max-h-[70vh] overflow-y-hidden absolute  top-0 left-[40%] inset-0 w-[40vw]  flex items-center flex-wrap ">
         {new Array(1000).fill(0).map((_, i) => (
           <div
             key={i}

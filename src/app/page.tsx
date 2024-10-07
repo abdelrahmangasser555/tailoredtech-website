@@ -58,7 +58,7 @@ export default function Home() {
   ];
   return (
     <div
-      className=" flex items-center justify-start flex-col min-h-screen bg-[#111] pt-[10vh]"
+      className=" flex items-center justify-start flex-col min-h-screen bg-[#111] pt-[10vh] max-w-[100vw] overflow-x-hidden"
       style={{
         scrollBehavior: "smooth",
       }}
@@ -74,7 +74,7 @@ export default function Home() {
         <div className=" flex flex-col items-start justify-start p-5">
           <GreenThingyWrapper setState={setActiveLink} index={0}>
             <h1
-              className={` ${poppins.className} text-[100px] text-[white] font-extrabold`}
+              className={` mobileHeadings ${poppins.className} text-[100px] text-[white] font-extrabold`}
               style={{
                 fontWeight: "900",
               }}
@@ -124,7 +124,7 @@ export default function Home() {
             </p>
           </GreenThingyWrapper>
           <GreenThingyWrapper setState={null}>
-            <p className=" text-white max-w-[60%] pl-4 mt-5">
+            <p className=" text-white md:max-w-[60%] sm:w-[100%] pl-4 mt-5">
               we created costume solutions for large multi national companies in
               different sectors and we are ready to help you with your next
               project
