@@ -1,3 +1,4 @@
+"use client";
 import { useRef, useState } from "react";
 import { FiLock } from "react-icons/fi";
 import { motion } from "framer-motion";

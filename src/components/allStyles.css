@@ -1,3 +1,7 @@
+::selection {
+  background-color: #13ffaa; /* Background color of highlighted text */
+  color: black; /* Text color of highlighted text */
+}
 :root {
   --my-degree: 0deg; /* Default value */
 }
@@ -55,6 +59,24 @@
   }
   .with-margin-top {
     margin-top: 20px;
+  }
+
+  .subHeadingMobile {
+    font-size: 20px !important;
+  }
+
+  .paragraghsMobile {
+    font-size: 15px !important;
+  }
+
+  .no-display-mobile {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .no-display-laptop {
+    display: none !important;
   }
 }
 

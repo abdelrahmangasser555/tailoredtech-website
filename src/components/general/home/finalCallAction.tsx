@@ -9,6 +9,7 @@ import Link from "next/link";
 import Lottie from "lottie-react";
 import { motion } from "framer-motion";
 import CryInterested from "../../../lottie animation/cryMorty.json";
+import { AnimatedLineWithText } from "@/components/animations/svgCircleAnimation";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -40,21 +41,16 @@ export default function FinalCallAction({ setState }, { setState: any }) {
         <hr />
         <GreenThingyWrapper setState={setState} index={5}>
           <span
-            className={` mobileHeadings ${poppins.className} text-[100px] text-[white] font-extrabold`}
+            className={` mobileHeadings ${poppins.className} text-[100px] text-[#13ffaa] font-bold`}
           >
             Take action
-            <span className="text-[#13ffaa]">.</span>
+            <span className=" text-white">.</span>
           </span>
         </GreenThingyWrapper>
       </div>
 
       <div className="flex flex-col items-center justify-center mt-10 p-5 relative z-10">
-        <span
-          className={`${poppins.className} text-center text-[50px] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#13ffaa] via-[#ff681d] to-[#37cdbe] animate-text mb-6`}
-          style={{ fontWeight: "900" }}
-        >
-          Ready to turn your vision into reality?
-        </span>
+        <AnimatedLineWithText text="Ready to turn your vision into reality?" />
 
         <div className="flex items-center justify-center gap-5 relative z-20">
           <button className="p-[3px] relative" onClick={handleClick}>
@@ -72,10 +68,7 @@ export default function FinalCallAction({ setState }, { setState: any }) {
             target="_blank"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-[#13ffaa] rounded-lg z-[-1]" />
-            <div
-              className="px-8 py-2 bg-black rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent text-center"
-              onClick={handleClick}
-            >
+            <div className="px-8 py-2 bg-black rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent text-center">
               Yes, let's talk 😃
             </div>
 

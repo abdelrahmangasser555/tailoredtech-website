@@ -4,6 +4,7 @@ import { Poppins } from "next/font/google";
 import { Stacks } from "@/components/animations/stackAnimation";
 import GreenThingyWrapper from "@/components/animations/greenThingyanimation";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import { BackgroundBlur } from "@/components/animations/backgroundBlur";
 const poppins = Poppins({
   subsets: ["latin"],
@@ -39,43 +40,48 @@ export default function AboutSection({ setState }: { setState: any }) {
         >
           <GreenThingyWrapper setState={null}>
             <p>
-              <span
-                className=" bg-slate-500 text-[#13ffaa] text-2xl rounded-md"
-                style={{
-                  float: "left",
-                  fontWeight: "900",
-                  padding: "0.5rem",
-                  margin: "0.5rem",
-                }}
-              >
-                T
+              Tailored tech{" "}
+              <span className="bg-[#13ffaa] px-1 text-black">
+                creates tailored software solutions
+              </span>{" "}
+              for your business from{" "}
+              <span className="bg-[#13ffaa] px-1 text-black">
+                idea to production
               </span>
-              ailored tech create cutting edge tailored software solution for
-              your business from idea to coding to production to scaling we are
-              with you all the way to reach the goal of your business.
+              . We help you achieve the{" "}
+              <span className="bg-[#13ffaa] px-1 text-black">
+                goal of your business
+              </span>
+              .
             </p>
           </GreenThingyWrapper>
+
           <GreenThingyWrapper setState={null}>
             <p>
-              we helped many businesses create software either it was a SaaS or
-              optimization for there company or automating manual processes we
-              help you focus on your business and we take care of the tech.
+              We assist companies with{" "}
+              <span className="bg-[#13ffaa] px-1 text-black">
+                automation and optimization
+              </span>{" "}
+              while you focus on your business.
             </p>
           </GreenThingyWrapper>
+
           <GreenThingyWrapper setState={null}>
             <p>
-              we are a team of developers that have experience in many
-              technologies and we are always learning and adapting to the new
-              technologies so we can provide you with the best solution for your
-              business.
+              Our team is{" "}
+              <span className="bg-[#13ffaa] px-1 text-black">
+                experienced in various technologies
+              </span>{" "}
+              and always learning to offer the best solutions.
             </p>
           </GreenThingyWrapper>
-          <button className="p-[3px] relative">
+
+          <Link className="p-[3px] relative" href="/timeline">
             <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-[#13ffaa] rounded-lg" />
             <div className="px-8 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
               explore more
             </div>
-          </button>
+          </Link>
         </div>
         <div className=" with-margin-top flex items-center justify-start flex-col h-[100%] md:ml-10 sm:ml-0 w-[300px] md:translate-y-[-40px] md:mt-0 sm:mt-10">
           <h1

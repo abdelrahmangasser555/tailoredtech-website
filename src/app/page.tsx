@@ -15,6 +15,7 @@ import ScaleUp from "@/components/animations/scaleUp";
 import FounderSection from "@/components/general/home/FounderSection";
 import LeftSideNav from "@/components/general/home/leftSideNav";
 import Footer from "@/components/general/home/fotter";
+import { AnimatedLineWithText } from "@/components/animations/svgCircleAnimation";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: "400",
@@ -63,7 +64,7 @@ export default function Home() {
         scrollBehavior: "smooth",
       }}
     >
-      <HomeNavBar />
+      <HomeNavBar index={0} />
       <LeftSideNav
         Links={Mylinks}
         activeLink={activeLink}
@@ -83,7 +84,7 @@ export default function Home() {
               <span className="text-[#13ffaa]">.</span>
             </h1>
             <p
-              className={`  ${poppins.className} text-2xl  pl-3 text-white opacity-70`}
+              className={` subHeadingMobile  ${poppins.className} text-2xl  pl-3 text-white opacity-70`}
               style={{
                 fontWeight: "400",
               }}
@@ -124,7 +125,7 @@ export default function Home() {
             </p>
           </GreenThingyWrapper>
           <GreenThingyWrapper setState={null}>
-            <p className=" text-white md:max-w-[60%] sm:w-[100%] pl-4 mt-5">
+            <p className="  text-white md:max-w-[60%] sm:w-[100%] pl-4 mt-5">
               we created software solutions for large multi national companies
               in different sectors and we are ready to help you with your next
               project

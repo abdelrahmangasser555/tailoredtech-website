@@ -161,7 +161,7 @@ export default function FounderSection({ setState }, { setState: any }) {
         <div className=" w-[100%] min-w-[40vw]">
           <BackgroundBlur />
           <Image
-            src="https://deistor4v34pj.cloudfront.net/2024-10-06T05-43-53.507Z-jomana image.jpg"
+            src="https://deistor4v34pj.cloudfront.net/2024-10-09T06-17-28.676Z-jomana black 2.jpg"
             alt="jomana emad picture"
             className="rounded-full h-50 w-50 "
             width={500}
