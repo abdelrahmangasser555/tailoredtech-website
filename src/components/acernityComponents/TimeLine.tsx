@@ -95,13 +95,14 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               router.push("#journey");
             }}
           >
-            Get Started
+            see our journey
           </button>
           <Link
             className=" flex items-center  justify-center w-40 h-10 rounded-xl bg-white text-black border border-white  text-sm"
-            href=""
+            href="https://calendly.com/abdelrahmangasser2023/software-development-consultation?month=2024-10&date=2024-10-08"
+            target="_blank"
           >
-            let's Talk
+            start your journey
           </Link>
         </div>
       </div>
