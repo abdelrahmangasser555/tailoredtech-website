@@ -11,6 +11,7 @@ import { BackgroundBlur } from "../animations/backgroundBlur";
 import { TypewriterEffectSmooth } from "./typeWrite";
 import { Poppins } from "next/font/google";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -26,6 +27,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const ref = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState(0);
+  const router = useRouter();
 
   useEffect(() => {
     if (ref.current) {
@@ -72,11 +74,10 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       style={{
         fontFamily: poppins.style.fontFamily,
       }}
-      id="journey"
     >
       <BackgroundBlur />
       <div
-        className="flex flex-col items-center justify-center h-[40rem]  "
+        className="flex flex-col items-center justify-center h-[50rem]  "
         style={{
           scrollBehavior: "smooth",
           scrollMarginTop: "10vh",
@@ -88,7 +89,12 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         </p>
         <TypewriterEffectSmooth words={words} />
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
-          <button className="w-40 h-10 rounded-xl border-white border-transparent text-white text-sm">
+          <button
+            className="w-40 h-10 rounded-xl border-white border-transparent text-white text-sm"
+            onClick={() => {
+              router.push("#journey");
+            }}
+          >
             Get Started
           </button>
           <Link

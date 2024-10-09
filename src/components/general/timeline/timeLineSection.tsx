@@ -24,7 +24,9 @@ export function TailoredTechTimeLine() {
         <div
           style={{
             fontFamily: poppins.style.fontFamily,
+            scrollMarginTop: "19vh",
           }}
+          id="journey"
         >
           <GreenThingyWrapper setState={null}>
             <p className=" text-2xl text-neutral-200   mb-8">
