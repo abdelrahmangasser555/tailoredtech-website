@@ -16,6 +16,7 @@ import { BsPuzzle } from "react-icons/bs";
 import { TbPuzzle } from "react-icons/tb";
 import { Poppins } from "next/font/google";
 import GreenThingyWrapper from "@/components/animations/greenThingyanimation";
+import Link from "next/link";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -112,17 +113,19 @@ export function ExpandableCardDemo() {
                       {active.description}
                     </motion.p>
                   </div>
-
                   <motion.a
                     layout
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    href={active.ctaLink}
+                    href={"https://calendly.com/tailoredtechapp/30min"}
                     target="_blank"
-                    className="px-4 py-3 text-sm rounded-full font-bold bg-green-500 text-white"
+                    className="p-[3px]"
                   >
-                    {active.ctaText}
+                    <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-[#13ffaa] rounded-lg" />
+                    <div className="px-8 py-2 text-sm text-center  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
+                      schedule Meting
+                    </div>
                   </motion.a>
                 </div>
                 <div className="pt-4 relative px-4">

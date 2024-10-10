@@ -42,7 +42,7 @@ export function HomeNavBar({ index }: { index: number | null }) {
       <div className=" no-display-mobile">
         <EncryptButton
           TARGET_TEXT="let's Talk"
-          link="https://calendly.com/abdelrahmangasser2023/software-development-consultation?month=2024-10&date=2024-10-08"
+          link="https://calendly.com/tailoredtechapp/30min"
         />
       </div>
       <div className=" no-display-laptop ">

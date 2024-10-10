@@ -62,9 +62,7 @@ export default function FinalCallAction({ setState }, { setState: any }) {
 
           <Link
             className="p-[3px] relative"
-            href={
-              "https://calendly.com/abdelrahmangasser2023/software-development-consultation?month=2024-10&date=2024-10-08"
-            }
+            href={"https://calendly.com/tailoredtechapp/30min"}
             target="_blank"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-[#13ffaa] rounded-lg z-[-1]" />

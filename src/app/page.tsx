@@ -136,13 +136,13 @@ export default function Home() {
               </AnimatedLineWithText>
             </p>
           </GreenThingyWrapper>
-          <GreenThingyWrapper setState={null}>
+          {/* <GreenThingyWrapper setState={null}>
             <p className="  text-white md:max-w-[60%] sm:w-[100%] pl-4 mt-5">
               we created software solutions for large multi national companies
               in different sectors and we are ready to help you with your next
               project
             </p>
-          </GreenThingyWrapper>
+          </GreenThingyWrapper> */}
           <GreenThingyWrapper setState={null}>
             <Button
               className={buttonVariants({ variant: "outline" })}
@@ -153,9 +153,7 @@ export default function Home() {
                 marginLeft: "1rem",
               }}
               onClick={() => {
-                router.push(
-                  "https://calendly.com/abdelrahmangasser2023/software-development-consultation?month=2024-10&date=2024-10-08"
-                );
+                router.push("https://calendly.com/tailoredtechapp/30min");
               }}
             >
               Get in touch

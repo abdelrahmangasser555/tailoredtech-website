@@ -305,9 +305,7 @@ export function TailoredTechTimeLine() {
           <button
             className="p-[3px] relative"
             onClick={() => {
-              navigation.push(
-                "https://calendly.com/abdelrahmangasser2023/software-development-consultation?month=2024-10&date=2024-10-08"
-              );
+              navigation.push("https://calendly.com/tailoredtechapp/30min");
             }}
           >
             <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-[#13ffaa] rounded-lg" />
