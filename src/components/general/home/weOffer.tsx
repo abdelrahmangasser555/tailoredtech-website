@@ -64,7 +64,7 @@ export default function WeOffer({ setState }, { setState: any }) {
         features={[
           "dashboard",
           "record keeping",
-          "costume analytics",
+          "custom analytics",
           "office management  board",
           "user management",
           "data tracking",
@@ -121,7 +121,7 @@ export default function WeOffer({ setState }, { setState: any }) {
         </div>
       </CrissCross>
       <CrissCross
-        title="Costum Software Solutions for Companies"
+        title="Custom Software Solutions for Companies"
         description={`
         we will create a software solution that fits your company needs and requirements
           ex : internal management software for a company that has multiple branches and departments

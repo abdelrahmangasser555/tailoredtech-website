@@ -80,12 +80,14 @@ export function AnimatedLineWithText({
   strokeColor,
   style,
   width,
+  delay,
 }: {
   text?: string;
   width?: string;
   children?: React.ReactNode | null;
   strokeColor?: string;
   style?: React.CSSProperties;
+  delay?: number;
 }) {
   const lineVariants = {
     hidden: { pathLength: 0, opacity: 0 },
@@ -95,6 +97,7 @@ export function AnimatedLineWithText({
       transition: {
         duration: 2,
         ease: "easeInOut",
+        delay: delay || 0.5,
       },
     },
   };
@@ -112,13 +115,13 @@ export function AnimatedLineWithText({
   };
 
   return (
-    <div
+    <span
       className=" mx-[5px] inline-block "
       style={{
         ...style,
       }}
     >
-      <motion.div
+      <motion.span
         className="flex flex-col justify-center items-center text-white"
         initial="hidden"
         whileInView="visible"
@@ -166,7 +169,7 @@ export function AnimatedLineWithText({
             viewport={{ once: true }}
           />
         </svg>
-      </motion.div>
-    </div>
+      </motion.span>
+    </span>
   );
 }

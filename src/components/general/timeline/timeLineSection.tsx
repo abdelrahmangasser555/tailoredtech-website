@@ -173,11 +173,11 @@ export function TailoredTechTimeLine() {
               business development docs
             </span>{" "}
             in
-            <AnimatedLineWithText strokeColor="#13ffaa" width="100">
+            <AnimatedLineWithText strokeColor="#13ffaa" width="100" delay={0.8}>
               <span className="text-[#13ffaa] mr-1 "> minutes</span>
             </AnimatedLineWithText>
             not{" "}
-            <AnimatedLineWithText strokeColor="red" width="100">
+            <AnimatedLineWithText strokeColor="red" width="100" delay={1.4}>
               <span className="text-error mr-1 ">months</span>
             </AnimatedLineWithText>
           </h1>

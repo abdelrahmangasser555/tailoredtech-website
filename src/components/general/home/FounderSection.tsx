@@ -109,7 +109,7 @@ export default function FounderSection({ setState }, { setState: any }) {
       <CrissCrossFounder
         title="Fares Wael"
         description={
-          "I am front end developer who like making designs come to live and deliver value added for costumers and I bench press 50kg "
+          "I am front end developer who like making designs come to live and deliver value added for costumers and I bench press 50kg per dumbbell "
         }
         github="https://github.com/faresw1"
         linkedin="www.linkedin.com/in/fares-wael-1b0464292"

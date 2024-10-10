@@ -13,7 +13,9 @@ export default function HighlightEffect({
 }) {
   const controls = useAnimation();
   const myRef = React.useRef<HTMLSpanElement>(null);
-  const intersectingObject = useInView(myRef);
+  const intersectingObject = useInView(myRef, {
+    once: true,
+  });
 
   React.useEffect(() => {
     if (intersectingObject) {

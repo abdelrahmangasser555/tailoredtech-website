@@ -90,38 +90,48 @@ export default function Home() {
               }}
             >
               Creating{" "}
-              <span
-                className="
+              <AnimatedLineWithText>
+                <span
+                  className="
                 text-[#13ffaa]
-              "
-                style={{
-                  fontWeight: "900",
-                }}
-              >
-                custom software solutions
-              </span>{" "}
+                "
+                  style={{
+                    fontWeight: "900",
+                  }}
+                >
+                  custom software solutions
+                </span>
+              </AnimatedLineWithText>
               for{" "}
-              <span
-                className="
-              text-[#13ffaa] text-extrabold 
-            "
-                style={{
-                  fontWeight: "900",
-                }}
+              <AnimatedLineWithText
+                strokeColor="#13ffaa"
+                width="100"
+                delay={1.2}
               >
-                businesses
-              </span>{" "}
+                <span
+                  className="
+                text-[#13ffaa] text-extrabold 
+                "
+                  style={{
+                    fontWeight: "900",
+                  }}
+                >
+                  businesses
+                </span>{" "}
+              </AnimatedLineWithText>
               and{" "}
-              <span
-                className="
+              <AnimatedLineWithText strokeColor="#13ffaa" width="100" delay={2}>
+                <span
+                  className="
                 text-[#13ffaa] text-extrabold 
               "
-                style={{
-                  fontWeight: "900",
-                }}
-              >
-                startups
-              </span>
+                  style={{
+                    fontWeight: "900",
+                  }}
+                >
+                  startups
+                </span>
+              </AnimatedLineWithText>
             </p>
           </GreenThingyWrapper>
           <GreenThingyWrapper setState={null}>
