@@ -86,7 +86,7 @@ export default function Home() {
               <span className="text-[#13ffaa]">.</span>
             </h1>
             <p
-              className={` subHeadingMobile  ${poppins.className} text-2xl  pl-3 text-white opacity-70`}
+              className={` no-display-mobile  subHeadingMobile  ${poppins.className} text-2xl  pl-3 text-white opacity-70`}
               style={{
                 fontWeight: "400",
               }}
@@ -135,14 +135,54 @@ export default function Home() {
                 </span>
               </AnimatedLineWithText>
             </p>
+            <p
+              className={`no-display-laptop subHeadingMobile  ${poppins.className} text-2xl  pl-3 text-white opacity-70`}
+              style={{
+                fontWeight: "400",
+              }}
+            >
+              Creating{" "}
+              <span
+                className="
+                text-[#13ffaa]
+                "
+                style={{
+                  fontWeight: "900",
+                }}
+              >
+                custom software solutions
+              </span>
+              for{" "}
+              <span
+                className="
+                text-[#13ffaa] text-extrabold 
+                "
+                style={{
+                  fontWeight: "900",
+                }}
+              >
+                businesses
+              </span>{" "}
+              and{" "}
+              <span
+                className="
+                text-[#13ffaa] text-extrabold 
+              "
+                style={{
+                  fontWeight: "900",
+                }}
+              >
+                startups
+              </span>
+            </p>
           </GreenThingyWrapper>
-          {/* <GreenThingyWrapper setState={null}>
-            <p className="  text-white md:max-w-[60%] sm:w-[100%] pl-4 mt-5">
+          <GreenThingyWrapper setState={null}>
+            <p className=" no-display-laptops  text-white md:max-w-[60%] sm:w-[100%] pl-4 mt-5">
               we created software solutions for large multi national companies
               in different sectors and we are ready to help you with your next
               project
             </p>
-          </GreenThingyWrapper> */}
+          </GreenThingyWrapper>
           <GreenThingyWrapper setState={null}>
             <Button
               className={buttonVariants({ variant: "outline" })}

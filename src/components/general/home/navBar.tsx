@@ -10,6 +10,10 @@ import { FaTimeline } from "react-icons/fa6";
 import TopNavBar from "../topNavBar";
 import { Poppins } from "next/font/google";
 import { FaUbuntu } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
+import { MdOutlineEmail } from "react-icons/md";
+import { FiFacebook } from "react-icons/fi";
+import { FaCubesStacked } from "react-icons/fa6";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -20,20 +24,28 @@ export function HomeNavBar({ index }: { index: number | null }) {
     <div className=" fixed glassy-nav top-0 w-[100%] h-[10vh]">
       <div className=" no-display-mobile flex items-center space-x-4">
         <Link
-          href="https://github.com/abdelrahmangasser555"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-xl text-[#13ffaa]"
-        >
-          <FaGithub />
-        </Link>
-        <Link
-          href="https://www.linkedin.com/in/abdelrahman-gasser-74571127b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          href="https://www.linkedin.com/company/tailoredtech-solutions/about/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-xl text-[#13ffaa]"
         >
           <FaLinkedin />
+        </Link>
+        <Link
+          href="https://web.facebook.com/profile.php?id=61566903934243"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-xl text-[#13ffaa]"
+        >
+          <FiFacebook />
+        </Link>
+        <Link
+          href="mailto:tailoredtechapp@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-xl text-[#13ffaa]"
+        >
+          <MdOutlineEmail />
         </Link>
       </div>
       <div className=" no-display-mobile ">
@@ -61,7 +73,7 @@ export function HomeNavBar({ index }: { index: number | null }) {
           className=" no-display-laptop tooltip tooltip-bottom"
           data-tip="bundles"
         >
-          <FaUbuntu
+          <FaCubesStacked
             className="text-[white] text-4xl hover:text-[#13ffaa]"
             style={{
               color: index === 1 ? "#13ffaa" : "white",

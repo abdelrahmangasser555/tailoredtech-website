@@ -3,6 +3,11 @@ import GreenThingyWrapper from "@/components/animations/greenThingyanimation";
 import { Poppins } from "next/font/google";
 import "../../allStyles.css";
 import { AnimatedLineWithText } from "@/components/animations/svgCircleAnimation";
+import Link from "next/link";
+import { FaInstagram } from "react-icons/fa";
+import { MdOutlineEmail } from "react-icons/md";
+import { FaLinkedin } from "react-icons/fa";
+import { FiFacebook } from "react-icons/fi";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: "400",
@@ -52,8 +57,13 @@ export default function Footer({ setState }, { setState: any }) {
               </a>
             </li>
             <li>
-              <a href="#founders" className="text-white hover:text-[#13ffaa]">
+              <a href="/#founders" className="text-white hover:text-[#13ffaa]">
                 Team
+              </a>
+            </li>
+            <li>
+              <a href="/timeline" className="text-white hover:text-[#13ffaa]">
+                timeline
               </a>
             </li>
           </ul>
@@ -64,18 +74,16 @@ export default function Footer({ setState }, { setState: any }) {
           <h2 className="text-[#13ffaa] text-lg font-bold mb-4">Services</h2>
           <ul className="space-y-2">
             <li>
-              <a href="#" className="text-white hover:text-[#13ffaa]">
-                Consulting
+              <a
+                href="https://calendly.com/tailoredtechapp/30min"
+                className="text-white hover:text-[#13ffaa]"
+              >
+                book consultation (free)
               </a>
             </li>
             <li>
-              <a href="#" className="text-white hover:text-[#13ffaa]">
-                Development
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-white hover:text-[#13ffaa]">
-                Support
+              <a href="/bundles" className="text-white hover:text-[#13ffaa]">
+                our bundles
               </a>
             </li>
           </ul>
@@ -84,22 +92,32 @@ export default function Footer({ setState }, { setState: any }) {
         {/* Contact Section */}
         <div className="w-full md:w-1/4">
           <h2 className="text-[#13ffaa] text-lg font-bold mb-4">Contact Us</h2>
-          <ul className="space-y-2">
-            <li className="text-white text-sm md:text-base">
-              Email: support@tailoredtech.tech
-            </li>
-            <li className="text-white text-sm md:text-base">
-              Phone: +123 456 7890
-            </li>
-            <li>
-              <a
-                href="mailto:abdelrahmangasser2023@gmail.com"
-                className="text-white hover:text-[#13ffaa]"
-              >
-                Support Center
-              </a>
-            </li>
-          </ul>
+          <div className="  flex items-center space-x-4">
+            <Link
+              href="https://www.linkedin.com/company/tailoredtech-solutions/about/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xl text-[#13ffaa]"
+            >
+              <FaLinkedin />
+            </Link>
+            <Link
+              href="https://web.facebook.com/profile.php?id=61566903934243"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xl text-[#13ffaa]"
+            >
+              <FiFacebook />
+            </Link>
+            <Link
+              href="mailto:tailoredtechapp@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xl text-[#13ffaa]"
+            >
+              <MdOutlineEmail />
+            </Link>
+          </div>
         </div>
       </div>
 
