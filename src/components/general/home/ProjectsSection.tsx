@@ -83,6 +83,21 @@ export default function ProjectsSection({ setState }, { setState: any }) {
           image="https://deistor4v34pj.cloudfront.net/2024-10-06T06-12-40.149Z-Screenshot 2024-10-06 090104.png"
           index={2}
         />
+        <OneProject
+          name="RoboCup app"
+          description="application that simulates and help judges track and trace there teams with a judge dashboard to manage the robocup competition"
+          client="RoboCup egypt"
+          stack={[
+            "flutter",
+            "python",
+            "dynamo db",
+            "db relationships",
+            "user groups",
+            "OAuth",
+          ]}
+          image="https://deistor4v34pj.cloudfront.net/2024-10-10T19-45-02.984Z-Screenshot 2024-10-10 224452.png"
+          index={3}
+        />
         {/* <OneProject
           name="Platinum Ai"
           description="Platinum Ai is a software solution that helps businesses automate their processes and improve their efficiency. It uses artificial intelligence to analyze data and make predictions, helping businesses make better decisions and grow faster."

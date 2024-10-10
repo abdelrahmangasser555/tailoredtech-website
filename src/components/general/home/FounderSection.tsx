@@ -98,7 +98,7 @@ export default function FounderSection({ setState }, { setState: any }) {
       >
         <div className=" w-[100%] min-w-[40vw]">
           <Image
-            src="https://deistor4v34pj.cloudfront.net/2024-10-06T05-39-06.931Z-joe black image.jpg"
+            src="https://deistor4v34pj.cloudfront.net/2024-10-07T18-56-01.043Z-joe%20version%202.jpg"
             alt="Abdelrahman Gasser"
             className="rounded-full h-50 w-50"
             width={500}
@@ -155,7 +155,12 @@ export default function FounderSection({ setState }, { setState: any }) {
 
           <BsSuitHeart className="text-error text-4xl" />,
         ]}
-        roles={["UI/UX developer", "Creative Designer"]}
+        roles={[
+          "UI/UX developer",
+          "Creative Designer",
+          "speak turkish 🇹🇷",
+          "love movies 🎥",
+        ]}
         reverse
       >
         <div className=" w-[100%] min-w-[40vw]">
