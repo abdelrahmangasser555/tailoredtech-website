@@ -24,8 +24,10 @@ const poppins = Poppins({
 import { BackgroundBlur } from "@/components/animations/backgroundBlur";
 import { InfiniteMovingCardsTestemonials } from "@/components/general/home/testemonials";
 import FinalCallAction from "@/components/general/home/finalCallAction";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
   const [activeLink, setActiveLink] = useState(0);
   const Mylinks = [
     {
@@ -149,6 +151,11 @@ export default function Home() {
                 color: "black",
                 marginTop: "2rem",
                 marginLeft: "1rem",
+              }}
+              onClick={() => {
+                router.push(
+                  "https://calendly.com/abdelrahmangasser2023/software-development-consultation?month=2024-10&date=2024-10-08"
+                );
               }}
             >
               Get in touch
