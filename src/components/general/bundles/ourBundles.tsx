@@ -8,11 +8,7 @@ import { LuFileSpreadsheet } from "react-icons/lu";
 import { FaArrowRight } from "react-icons/fa6";
 import { MdOutlineComputer } from "react-icons/md";
 import { HiOutlineLightBulb } from "react-icons/hi";
-import { IoCodeSlash } from "react-icons/io5";
-import { ThreeDCardHome } from "./StartUpCard";
-import { BsStars } from "react-icons/bs";
-import { GiHouseKeys } from "react-icons/gi";
-import { CiCloudOn } from "react-icons/ci";
+
 import { Stacks } from "@/components/animations/stackAnimation";
 import { IoMdRocket } from "react-icons/io";
 import { PiPuzzlePiece } from "react-icons/pi";
