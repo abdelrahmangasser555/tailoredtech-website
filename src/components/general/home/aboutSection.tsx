@@ -6,6 +6,7 @@ import GreenThingyWrapper from "@/components/animations/greenThingyanimation";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { BackgroundBlur } from "@/components/animations/backgroundBlur";
+import HighlightEffect from "@/components/animations/theHighlightEffect";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: "400",
@@ -41,17 +42,17 @@ export default function AboutSection({ setState }: { setState: any }) {
           <GreenThingyWrapper setState={null}>
             <p>
               Tailored tech{" "}
-              <span className="bg-[#13ffaa] px-1 text-black">
+              <HighlightEffect color="#13ffaa" delay={1.2}>
                 creates tailored software solutions
-              </span>{" "}
+              </HighlightEffect>{" "}
               for your business from{" "}
-              <span className="bg-[#13ffaa] px-1 text-black">
+              <HighlightEffect color="#13ffaa" delay={1.8}>
                 idea to production
-              </span>
+              </HighlightEffect>
               . We help you achieve the{" "}
-              <span className="bg-[#13ffaa] px-1 text-black">
+              <HighlightEffect color="#13ffaa" delay={3}>
                 goal of your business
-              </span>
+              </HighlightEffect>{" "}
               .
             </p>
           </GreenThingyWrapper>
@@ -59,9 +60,9 @@ export default function AboutSection({ setState }: { setState: any }) {
           <GreenThingyWrapper setState={null}>
             <p>
               We assist companies with{" "}
-              <span className="bg-[#13ffaa] px-1 text-black">
+              <HighlightEffect color="#13ffaa" delay={5}>
                 automation and optimization
-              </span>{" "}
+              </HighlightEffect>{" "}
               while you focus on your business.
             </p>
           </GreenThingyWrapper>
@@ -69,9 +70,9 @@ export default function AboutSection({ setState }: { setState: any }) {
           <GreenThingyWrapper setState={null}>
             <p>
               Our team is{" "}
-              <span className="bg-[#13ffaa] px-1 text-black">
+              <HighlightEffect color="#13ffaa" delay={7}>
                 experienced in various technologies
-              </span>{" "}
+              </HighlightEffect>{" "}
               and always learning to offer the best solutions.
             </p>
           </GreenThingyWrapper>

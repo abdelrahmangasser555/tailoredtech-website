@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import AnimatedCircleWithText from "@/components/animations/svgCircleAnimation";
 
 export default function FirstSection({
   children,

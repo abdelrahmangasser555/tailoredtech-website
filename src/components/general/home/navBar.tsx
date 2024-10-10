@@ -47,11 +47,12 @@ export function HomeNavBar({ index }: { index: number | null }) {
       </div>
       <div className=" no-display-laptop ">
         <GreenThingyWrapper setState={null} index={6}>
-          <span
+          <Link
+            href={"/"}
             className={`${poppins.className} no-display-laptop text-[50px] md:text-[100px] text-white font-extrabold`}
           >
             T<span className="text-[#13ffaa]">t.</span>
-          </span>
+          </Link>
         </GreenThingyWrapper>
       </div>
       <div className=" no-display-laptop  flex items-center  gap-2">

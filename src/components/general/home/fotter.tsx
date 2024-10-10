@@ -2,7 +2,7 @@ import React from "react";
 import GreenThingyWrapper from "@/components/animations/greenThingyanimation";
 import { Poppins } from "next/font/google";
 import "../../allStyles.css";
-
+import { AnimatedLineWithText } from "@/components/animations/svgCircleAnimation";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: "400",
@@ -35,9 +35,11 @@ export default function Footer({ setState }, { setState: any }) {
               </GreenThingyWrapper>
             </div>
           </div>
-          <p className="text-gray-400 text-sm md:text-base">
-            Great Solutions for Greater Companies
-          </p>
+          <AnimatedLineWithText width="250">
+            <p className="text-white text-sm md:text-base">
+              Great Solutions for Greater Companies
+            </p>
+          </AnimatedLineWithText>
         </div>
 
         {/* Links Section */}

@@ -16,6 +16,7 @@ import {
   FaGlobe,
 } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { AnimatedLineWithText } from "./svgCircleAnimation";
 import Link from "next/link";
 const poppins = Poppins({
   subsets: ["latin"],
@@ -81,13 +82,15 @@ export function CrissCrossFounder({
         </GreenThingyWrapper>
         <GreenThingyWrapper setState={null}>
           <h1
-            className={` ${poppins.className} text-2xl text-white  text-center `}
+            className={` ${poppins.className} text-2xl text-white  text-center mb-[-30px] `}
             style={{
               fontWeight: "900",
             }}
           >
             Hi I am{" "}
-            <span className="text-[#13ffaa] font-extrabold">{title}</span>
+            <AnimatedLineWithText width="100">
+              <span className="text-[#13ffaa] font-extrabold">{title}</span>
+            </AnimatedLineWithText>
             <span className="text-[white]">.</span>
           </h1>
         </GreenThingyWrapper>
@@ -112,16 +115,18 @@ export function CrissCrossFounder({
         </div>
         <GreenThingyWrapper setState={null}>
           <div className="flex flex-wrap gap-4 flex-col">
-            <h1
-              className={` ${poppins.className} text-2xl  text-center text-white `}
-              style={{
-                fontWeight: "900",
-              }}
-            >
-              Connect with me
-              <span className="text-[#13ffaa]">.</span>
-            </h1>
-            <div className="flex flex-wrap justify-center  gap-4">
+            <AnimatedLineWithText>
+              <h1
+                className={` ${poppins.className} text-2xl  text-center text-white `}
+                style={{
+                  fontWeight: "900",
+                }}
+              >
+                Connect with me
+                <span className="text-[#13ffaa]">.</span>
+              </h1>
+            </AnimatedLineWithText>
+            <div className="flex flex-wrap justify-center  gap-4 mt-[-40px]">
               {linkedin && (
                 <Link
                   href={linkedin}
