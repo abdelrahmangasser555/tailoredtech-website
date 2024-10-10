@@ -36,7 +36,7 @@ export default function Footer({ setState }, { setState: any }) {
             </div>
           </div>
           <AnimatedLineWithText width="250">
-            <p className="text-white text-sm md:text-base">
+            <p className="text-white text-sm md:text-base text-nowrap">
               Great Solutions for Greater Companies
             </p>
           </AnimatedLineWithText>

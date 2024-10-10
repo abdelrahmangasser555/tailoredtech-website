@@ -5,11 +5,19 @@ import { HomeNavBar } from "@/components/general/home/navBar";
 import Footer from "@/components/general/home/fotter";
 import LeftSideNav from "@/components/general/home/leftSideNav";
 import AnimatedCircleWithText from "@/components/animations/svgCircleAnimation";
+
+import { AnimatedLineWithText } from "@/components/animations/svgCircleAnimation";
+import { Poppins } from "next/font/google";
+import { ExpandableCardDemo } from "@/components/general/bundles/ourBundles";
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: "400",
+});
 export default function Page() {
   const [activeLink, setActiveLink] = useState(0);
   const Mylinks = [
     {
-      name: "Coming soon",
+      name: "Our Bundles",
       link: "journey",
     },
   ];
@@ -26,10 +34,21 @@ export default function Page() {
         activeLink={0}
         setActiveLink={setActiveLink}
       />
-
-      <div className=" h-[80vh] flex items-center justify-center">
-        <AnimatedCircleWithText text="Coming soon" />
-      </div>
+      <AnimatedLineWithText>
+        <h2
+          className="text-center text-xl md:text-4xl font-bold w-[100%] mt-5  "
+          style={{
+            fontFamily: poppins.style.fontFamily,
+          }}
+        >
+          Scalable <span className=" text-[#13ffaa] mr-1">&</span>
+          Interactive <span className=" text-[#13ffaa] mr-1">&</span>{" "}
+          Customizable
+        </h2>
+      </AnimatedLineWithText>
+      {/* <GlobeBundles /> */}
+      <ExpandableCardDemo />
+      <div className=" h-[40vh]" />
       <Footer setState={setActiveLink} />
     </div>
   );

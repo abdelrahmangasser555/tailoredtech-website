@@ -16,6 +16,7 @@ import FounderSection from "@/components/general/home/FounderSection";
 import LeftSideNav from "@/components/general/home/leftSideNav";
 import Footer from "@/components/general/home/fotter";
 import { AnimatedLineWithText } from "@/components/animations/svgCircleAnimation";
+import AnimatedCircleWithText from "@/components/animations/svgCircleAnimation";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: "400",
@@ -23,7 +24,6 @@ const poppins = Poppins({
 import { BackgroundBlur } from "@/components/animations/backgroundBlur";
 import { InfiniteMovingCardsTestemonials } from "@/components/general/home/testemonials";
 import FinalCallAction from "@/components/general/home/finalCallAction";
-import { link } from "fs";
 
 export default function Home() {
   const [activeLink, setActiveLink] = useState(0);
@@ -160,6 +160,7 @@ export default function Home() {
 
       <AboutSection setState={setActiveLink} />
       <WeOffer setState={setActiveLink} />
+      <AnimatedCircleWithText text="See Bundles" link="/bundles" />
       <ProjectsSection setState={setActiveLink} />
       <FounderSection setState={setActiveLink} />
       <FinalCallAction setState={setActiveLink} />

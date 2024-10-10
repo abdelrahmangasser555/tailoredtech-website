@@ -57,6 +57,8 @@ export default function AnimatedCircleWithText({
         height="200"
         viewBox="0 0 200 200"
         xmlns="http://www.w3.org/2000/svg"
+        className={"cursor-pointer"}
+        onClick={handleClick}
       >
         <motion.path
           d="M100,20 C120,20 140,30 160,60 C180,90 180,110 160,140 C140,170 120,180 100,180 C80,180 60,170 40,140 C20,110 20,90 40,60 C60,30 80,20 100,20 Z"

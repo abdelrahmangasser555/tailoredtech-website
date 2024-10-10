@@ -28,8 +28,9 @@ export default function HighlightEffect({
       ref={myRef}
       initial={{ color: "white" }}
       whileInView={{ color: "black" }}
-      transition={{ duration: 0.3, delay: delay || 0.5 }}
+      transition={{ duration: 0, delay: delay || 0.5 }}
       className="relative inline-block"
+      viewport={{ once: true }}
       style={{
         position: "relative",
         display: "inline-block",
