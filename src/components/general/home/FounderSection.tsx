@@ -70,7 +70,7 @@ export default function FounderSection({ setState }, { setState: any }) {
       >
         <div className=" w-[100%] min-w-[40vw]">
           <Image
-            src="https://deistor4v34pj.cloudfront.net/2024-10-05T17-55-36.919Z-black and white me.jpg"
+            src="https://deistor4v34pj.cloudfront.net/2024-10-18T16-34-54.003Z-my profile.jpg"
             alt="Abdelrahman Gasser"
             className="rounded-full h-50 w-50 md:ml-[10vw] sm:ml-0"
             width={500}
@@ -98,7 +98,7 @@ export default function FounderSection({ setState }, { setState: any }) {
       >
         <div className=" w-[100%] min-w-[40vw]">
           <Image
-            src="https://deistor4v34pj.cloudfront.net/2024-10-07T18-56-01.043Z-joe%20version%202.jpg"
+            src="https://deistor4v34pj.cloudfront.net/2024-10-18T16-37-17.110Z-shorse image proffesional.jpg"
             alt="Abdelrahman Gasser"
             className="rounded-full h-50 w-50"
             width={500}
