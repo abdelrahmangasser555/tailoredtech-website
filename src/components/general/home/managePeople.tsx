@@ -7,28 +7,35 @@ const people = [
     name: "Abdelrahman Gasser",
     designation: "Founder + Full Stack Developer",
     image:
-      "https://deistor4v34pj.cloudfront.net/2024-10-05T17-45-04.544Z-profile 1.jpg",
+      "https://deistor4v34pj.cloudfront.net/tailored+tech+profile+pictures/profile+1.jpg",
   },
   {
     id: 2,
     name: "Yusuf Emad",
     designation: "Founder + DevOps",
     image:
-      "https://media-hbe1-1.cdn.whatsapp.net/v/t61.24694-24/328237952_445434021452552_3964852462642416082_n.jpg?ccb=11-4&oh=01_Q5AaIJ-DaAg4qgjMJvHO446IUGpfWmchV3SuuD9RSBnW6p3n&oe=670EA30A&_nc_sid=5e03e0&_nc_cat=108",
+      "https://deistor4v34pj.cloudfront.net/tailored+tech+profile+pictures/shorse+whats+app+rprofile.jpg",
   },
   {
     id: 3,
     name: "Fares wael",
     designation: "Co-founder  + Front end developer",
     image:
-      "https://media-hbe1-1.cdn.whatsapp.net/v/t61.24694-24/417662875_405215412094465_2228147333160501080_n.jpg?ccb=11-4&oh=01_Q5AaIKzeo_2ooHDyIYCuJ5CeJdrD9wewVrKGd2kpLqrpySkr&oe=670FC253&_nc_sid=5e03e0&_nc_cat=107",
+      "https://deistor4v34pj.cloudfront.net/2024-10-07T18-52-29.525Z-fares version2.jpg",
   },
   {
     id: 4,
     name: "Jomana emad",
     designation: "UI/UX Designer",
     image:
-      "https://media-hbe1-1.cdn.whatsapp.net/v/t61.24694-24/434156189_417019941022249_5478058568647130362_n.jpg?ccb=11-4&oh=01_Q5AaIBl309PzQmLBRIO0gwgl8NiYgW5W2wMX-gNBvNBxNSyR&oe=670EB2E8&_nc_sid=5e03e0&_nc_cat=111",
+      "https://deistor4v34pj.cloudfront.net/2024-10-09T06-17-28.676Z-jomana black 2.jpg",
+  },
+  {
+    id: 5,
+    name: "Abdullah",
+    designation: "Sales & PR",
+    image:
+      "https://deistor4v34pj.cloudfront.net/tailored+tech+profile+pictures/abdullah+image+1.jpg",
   },
 ];
 

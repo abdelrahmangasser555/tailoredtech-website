@@ -18,6 +18,9 @@ import { BsSuitClub } from "react-icons/bs";
 import { BsSuitHeart } from "react-icons/bs";
 import { FaLaptopCode } from "react-icons/fa";
 import { BsSuitDiamond } from "react-icons/bs";
+import { HiSpeakerphone } from "react-icons/hi";
+import { FaMoneyBillTrendUp } from "react-icons/fa6";
+import { TbSpeakerphone } from "react-icons/tb";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: "400",
@@ -141,6 +144,37 @@ export default function FounderSection({ setState }, { setState: any }) {
         </div>
       </CrissCrossFounder>
       <CrissCrossFounder
+        title="Abdullah"
+        description={
+          "I am a sales and PR specialist with a passion for building relationships and helping businesses grow. I have experience in sales, marketing, and public relations, and I am always looking for new opportunities to learn and grow."
+        }
+        linkedin="https://www.linkedin.com/in/abdullahhmagdyy/"
+        email="mailto:abdullah@tailoredtech.tech"
+        mainIcon={[
+          // eslint-disable-next-line react/jsx-key
+          <FaMoneyBillTrendUp className="text-[#13ffaa] text-4xl" />,
+
+          <TbSpeakerphone className="text-yellow-400 text-5xl rotate-[-30deg]" />,
+        ]}
+        roles={[
+          "Sales & PR",
+          "Entrepreneur",
+          "e-commerce specialist",
+          "marketing guru",
+        ]}
+        reverse
+      >
+        <div className=" w-[100%] min-w-[40vw]">
+          <Image
+            src="https://deistor4v34pj.cloudfront.net/tailored+tech+profile+pictures/abdullah+linked+in+image.jpg"
+            alt="abdullah picture"
+            className="rounded-full h-50 w-50 "
+            width={500}
+            height={500}
+          />
+        </div>
+      </CrissCrossFounder>
+      <CrissCrossFounder
         title="Jomana Emad"
         description={
           "I am UI/UX designer with a passion for creating something worth looking at"
@@ -161,14 +195,13 @@ export default function FounderSection({ setState }, { setState: any }) {
           "speak turkish 🇹🇷",
           "love movies 🎥",
         ]}
-        reverse
       >
         <div className=" w-[100%] min-w-[40vw]">
           <BackgroundBlur />
           <Image
             src="https://deistor4v34pj.cloudfront.net/2024-10-09T06-17-28.676Z-jomana black 2.jpg"
             alt="jomana emad picture"
-            className="rounded-full h-50 w-50 "
+            className="rounded-full h-50 w-50 md:ml-[10vw] sm:ml-0 "
             width={500}
             height={500}
           />
