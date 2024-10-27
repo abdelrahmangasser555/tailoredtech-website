@@ -2,7 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import { motion, stagger, useAnimate, useInView } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Poppins } from "next/font/google";
 
 const poppins = Poppins({
@@ -187,3 +187,41 @@ export const TypewriterEffectSmooth = ({
     </div>
   );
 };
+
+export function TypeWriterParagraph({ words, className=null }) {
+  // This component renders a <p></p> animated like a typewriter with a cursor
+  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+  const [currentLetterIndex, setCurrentLetterIndex] = useState(0);
+  const [showCursor, setShowCursor] = useState(true);
+
+  const typeSpeed = 25;
+  const cursorBlinkSpeed = 500;
+
+  const type = () => {
+    if (currentLetterIndex < words[currentWordIndex].length) {
+      setCurrentLetterIndex((prev) => prev + 1);
+    } else if (currentWordIndex < words.length - 1) {
+      setCurrentWordIndex((prev) => prev + 1);
+      setCurrentLetterIndex(0);
+    }
+  };
+
+  useEffect(() => {
+    const typingTimeout = setTimeout(type, typeSpeed);
+    return () => clearTimeout(typingTimeout);
+  }, [currentLetterIndex, currentWordIndex]);
+
+  useEffect(() => {
+    const cursorBlinkTimeout = setInterval(() => {
+      setShowCursor((prev) => !prev);
+    }, cursorBlinkSpeed);
+    return () => clearInterval(cursorBlinkTimeout);
+  }, []);
+
+  return (
+    <p className={className || "text-black self-start font-semibold bg-[#13ffaa] p-1"}>
+      {words[currentWordIndex].substring(0, currentLetterIndex)}
+      {showCursor && <span className="cursor">|</span>}
+    </p>
+  );
+}

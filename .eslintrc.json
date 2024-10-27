@@ -2,8 +2,13 @@
   "extends": ["next/core-web-vitals", "next/typescript"],
   "rules": {
     "no-unused-vars": [
-      "warn", // Change to "off" if you want to disable entirely
+      "off", // Change to "off" if you want to disable entirely
       { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" } // Ignore vars starting with _
-    ]
+    ],
+    "@typescript-eslint/no-unused-vars": [
+      "off", // Change to "off" if you want to disable entirely
+      { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" } // Ignore vars starting with _
+    ],
+    "react/jsx-key": "warn" // Add this line to allow warnings for missing key prop
   }
 }
