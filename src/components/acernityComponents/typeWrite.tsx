@@ -221,7 +221,7 @@ export function TypeWriterParagraph({ words, className=null }) {
   return (
     <p className={className || "text-black self-start font-semibold bg-[#13ffaa] p-1"}>
       {words[currentWordIndex].substring(0, currentLetterIndex)}
-      {showCursor && <span className="cursor">|</span>}
+      {showCursor ? <span className="cursor">|</span> : <span className="cursor">&nbsp;</span>}
     </p>
   );
 }

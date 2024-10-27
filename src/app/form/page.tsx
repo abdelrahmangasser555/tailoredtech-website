@@ -51,7 +51,7 @@ export default function Form() {
         return (
             <div className="flex flex-col justify-center items-center m-0 p-0 min-h-screen bg-[#111] box-border">
                 <BackgroundBlur />
-                <HomeNavBar index={2} />
+                <HomeNavBar index={-1} />
                 <div className='min-h-[10vh]'></div>
                 <div className="w-[100%] h-[10px] bg-gradient-to-t from-[#13ffaa] to-transparent" />
                 <div className="bg-[#111827] w-[100%] min-h-[70vh]">
@@ -116,7 +116,7 @@ export default function Form() {
     return (
         <div className="flex flex-col justify-center items-center m-0 p-0 min-h-screen bg-[#111] box-border">
             <BackgroundBlur />
-            <HomeNavBar index={2} />
+            <HomeNavBar index={-1} />
             <div className='min-h-[10vh]'></div>
             {/* small thin container with width 100% and height 10px and color is from [#13ffaa] to transparent. gradient from bottom to up */}
 
