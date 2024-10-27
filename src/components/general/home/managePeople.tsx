@@ -21,7 +21,7 @@ const people = [
     name: "Fares wael",
     designation: "Co-founder  + Front end developer",
     image:
-      "https://deistor4v34pj.cloudfront.net/2024-10-07T18-52-29.525Z-fares version2.jpg",
+      "https://deistor4v34pj.cloudfront.net/tailored+tech+profile+pictures/a7la+try.jpg",
   },
   {
     id: 4,

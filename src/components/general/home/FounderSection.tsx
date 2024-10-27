@@ -100,6 +100,7 @@ export default function FounderSection({ setState }, { setState: any }) {
         reverse
       >
         <div className=" w-[100%] min-w-[40vw]">
+          <BackgroundBlur />
           <Image
             src="https://deistor4v34pj.cloudfront.net/2024-10-18T16-37-17.110Z-shorse image proffesional.jpg"
             alt="Abdelrahman Gasser"
@@ -133,7 +134,6 @@ export default function FounderSection({ setState }, { setState: any }) {
         ]}
       >
         <div className=" w-[100%] min-w-[40vw]">
-          <BackgroundBlur />
           <Image
             src="https://deistor4v34pj.cloudfront.net/2024-10-07T18-52-29.525Z-fares version2.jpg"
             alt="fares wael picture"

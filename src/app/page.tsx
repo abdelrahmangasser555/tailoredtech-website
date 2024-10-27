@@ -91,7 +91,7 @@ export default function Home() {
         <div className=" flex flex-col items-start justify-start p-5">
           <GreenThingyWrapper setState={setActiveLink} index={0}>
             <h1
-              className={` mobileHeadings ${poppins.className} text-[100px] text-[white] font-extrabold sm:text-center text-nowrap `}
+              className={` mobileHeadings ${poppins.className} text-[100px] text-[white] font-extrabold  text-nowrap `}
               style={{
                 fontWeight: "900",
               }}
