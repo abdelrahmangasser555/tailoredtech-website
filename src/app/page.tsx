@@ -17,6 +17,7 @@ import LeftSideNav from "@/components/general/home/leftSideNav";
 import Footer from "@/components/general/home/fotter";
 import { AnimatedLineWithText } from "@/components/animations/svgCircleAnimation";
 import AnimatedCircleWithText from "@/components/animations/svgCircleAnimation";
+import SpringModal from "@/components/animations/hoverModal";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: "400",
@@ -29,6 +30,18 @@ import { useRouter } from "next/navigation";
 export default function Home() {
   const router = useRouter();
   const [activeLink, setActiveLink] = useState(0);
+  const [openModal, setOpenModal] = useState(false);
+
+  React.useEffect(() => {
+    // wait for 3 seconds then set the modal to open to true
+    const gotGift = JSON.parse(localStorage.getItem("submitted"));
+
+    if (!gotGift) {
+      setTimeout(() => {
+        setOpenModal(true);
+      }, 3000);
+    }
+  }, []);
   const Mylinks = [
     {
       name: "Main",
@@ -66,6 +79,7 @@ export default function Home() {
         scrollBehavior: "smooth",
       }}
     >
+      <SpringModal isOpen={openModal} setIsOpen={setOpenModal} />
       <HomeNavBar index={0} />
       <LeftSideNav
         Links={Mylinks}

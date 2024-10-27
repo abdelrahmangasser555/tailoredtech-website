@@ -182,3 +182,20 @@
     --my-degree: 360deg;
   }
 }
+
+.all-modal {
+  width: clamp(300px, 80%, 800px);
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000000e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

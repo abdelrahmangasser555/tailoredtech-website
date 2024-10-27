@@ -188,7 +188,7 @@ export const TypewriterEffectSmooth = ({
   );
 };
 
-export function TypeWriterParagraph({ words, className=null }) {
+export function TypeWriterParagraph({ words, className = null }) {
   // This component renders a <p></p> animated like a typewriter with a cursor
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [currentLetterIndex, setCurrentLetterIndex] = useState(0);
@@ -219,9 +219,17 @@ export function TypeWriterParagraph({ words, className=null }) {
   }, []);
 
   return (
-    <p className={className || "text-black self-start font-semibold bg-[#13ffaa] p-1"}>
+    <p
+      className={
+        className || "text-black self-start font-semibold bg-[#13ffaa] p-1"
+      }
+    >
       {words[currentWordIndex].substring(0, currentLetterIndex)}
-      {showCursor ? <span className="cursor">|</span> : <span className="cursor">&nbsp;</span>}
+      {showCursor ? (
+        <span className="cursor">|</span>
+      ) : (
+        <span className="cursor">&nbsp;</span>
+      )}
     </p>
   );
 }

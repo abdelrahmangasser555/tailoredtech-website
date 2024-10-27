@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { Poppins } from "next/font/google";
+import path from "path";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -18,6 +19,10 @@ const myLinks = [
   {
     name: "Timeline",
     path: "/timeline",
+  },
+  {
+    name: "Free Gift",
+    path: "/form",
   },
 ];
 
