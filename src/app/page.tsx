@@ -36,9 +36,18 @@ export default function Home() {
     // wait for 3 seconds then set the modal to open to true
     const gotGift = JSON.parse(localStorage.getItem("submitted"));
 
+    // check for how many times the gift were shown (showCount in localstorage) note: key might not be found in the beginning
+    const showCount = JSON.parse(localStorage.getItem("showCount") ?? "0");
+
+    // if the modal is shown more than 3 times, stop showing it
+    if (showCount >= 3) {
+      return;
+    }
+
     if (!gotGift) {
       setTimeout(() => {
         setOpenModal(true);
+        localStorage.setItem("showCount", JSON.stringify(showCount + 1));
       }, 3000);
     }
   }, []);
