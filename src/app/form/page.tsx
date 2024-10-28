@@ -159,7 +159,8 @@ export default function Form() {
       {/* small thin container with width 100% and height 10px and color is from [#13ffaa] to transparent. gradient from bottom to up */}
 
       <div className="w-[100%] min-h-[70vh]">
-        <div className="flex flex-col items-center justify-evenly w-[100%] h-[80vh]">
+        <div className="h-[20vh]"/>
+        <div className="flex flex-col items-center justify-center w-[100%] h-fit">
           <AnimatedLineWithText strokeColor="#13ffaa" width="150" delay={0.5}>
             <h1 className="text-[#13ffaa] text-4xl font-bold">Free Gift</h1>
           </AnimatedLineWithText>
@@ -263,6 +264,7 @@ export default function Form() {
             >
               Submit
             </button>
+            <div className="h-[5vh]" />
           </form>
         </div>
       </div>
