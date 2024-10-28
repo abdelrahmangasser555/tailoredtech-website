@@ -23,6 +23,14 @@ type FormErrors = {
   business?: string;
 };
 
+function LoadingComponent() {
+  return (
+    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50">
+      <span className="loading loading-spinner loading-lg bg-white"></span>
+    </div>
+  );
+}
+
 export default function Form() {
   // check from the localstorage that if the user has already submitted the form, display for him check your email and a resubmit button
   // if not display the form
@@ -43,6 +51,8 @@ export default function Form() {
     business: "",
     longAnswer: "",
   });
+
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const submitted = localStorage.getItem("submitted");
@@ -122,6 +132,7 @@ export default function Form() {
   };
 
   const validateForm = () => {
+    console.log("Form DATA", formData);
     const newErrors: FormErrors = {};
 
     if (!formData.name) newErrors.name = "Name is required.";
@@ -130,14 +141,14 @@ export default function Form() {
       newErrors.email = "Please enter a valid email address.";
     if (!formData.longAnswer)
       newErrors.longAnswer = "Please answer the question.";
-    if (!formData.business) newErrors.business = "Please select a business.";
+    if (!formData.business || formData.business === "Select your business type") newErrors.business = "Please select a business.";
 
     setErrors(newErrors);
 
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (validateForm()) {
       // send an http request to submit the form
@@ -150,6 +161,8 @@ export default function Form() {
         answer: formData.longAnswer,
       }
 
+      setLoading(true);
+
       // send post request and console log success or error
       fetch(url, {
         method: "POST",
@@ -161,8 +174,12 @@ export default function Form() {
         .then((res) => {
           if (res.ok) {
             console.log("Form submitted successfully:", formData);
+            setLoading(false);
+            localStorage.setItem("submitted", "true");
+            setSubmitted(true);
           } else {
             console.log("Form has errors:", errors);
+            setLoading(false);
             return;
           }
         })
@@ -177,8 +194,8 @@ export default function Form() {
 
     // send http request to submit the form
     // set the localstorage to submitted
-    localStorage.setItem("submitted", "true");
-    setSubmitted(true);
+    // localStorage.setItem("submitted", "true");
+    // setSubmitted(true);
   };
 
   return (
@@ -186,6 +203,7 @@ export default function Form() {
       <BackgroundBlur />
       <HomeNavBar index={3} />
 
+      {loading && <LoadingComponent />}
       {/* small thin container with width 100% and height 10px and color is from [#13ffaa] to transparent. gradient from bottom to up */}
 
       <div className="w-[100%] min-h-[70vh]">
@@ -269,6 +287,7 @@ export default function Form() {
                 </option>
               </select>
             </div>
+            {errors.business && <p className="text-red-500">{errors.business}</p>}
             <div className="flex flex-col items-center justify-center w-[90%] sm:w-[50%] m-4">
               {/* <p className='text-black self-start font-semibold bg-[#13ffaa] p-1'>Describe the most time consuming task in your business</p> */}
               <TypeWriterParagraph
