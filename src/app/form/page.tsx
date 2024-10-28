@@ -108,7 +108,7 @@ export default function Form() {
                 Resubmit
               </button>
               <Link
-                href="/"
+                href="https://calendly.com/tailoredtechapp/30min"
                 className="p-3 m-2 w-[50%] text-center h-[50px] bg-[#13ffaa] text-[#111827] border-[#13ffaa] border-2 rounded-md transition-colors duration-200 hover:bg-[#0fe1a5] flex items-center justify-center "
               >
                 Book a free technical consultation now !
