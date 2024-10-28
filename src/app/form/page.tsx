@@ -7,6 +7,7 @@ import { AnimatedLineWithText } from "@/components/animations/svgCircleAnimation
 import { TypeWriterParagraph } from "@/components/acernityComponents/typeWrite";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { a } from "framer-motion/client";
 
 type FormData = {
   name: string;
@@ -139,7 +140,36 @@ export default function Form() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (validateForm()) {
-      console.log("Form submitted successfully:", formData);
+      // send an http request to submit the form
+      const url = "https://2kb3leke6vl6gxrfkfhnna5uh40djflo.lambda-url.eu-north-1.on.aws/"
+
+      const data = {
+        name: formData.name,
+        email: formData.email,
+        business: formData.business,
+        answer: formData.longAnswer,
+      }
+
+      // send post request and console log success or error
+      fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      })
+        .then((res) => {
+          if (res.ok) {
+            console.log("Form submitted successfully:", formData);
+          } else {
+            console.log("Form has errors:", errors);
+            return;
+          }
+        })
+        .catch((err) => {
+          console.error(err);
+        });
+      
     } else {
       console.log("Form has errors:", errors);
       return;
