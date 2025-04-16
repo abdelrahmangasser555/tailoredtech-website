@@ -70,19 +70,19 @@ export default function ProjectsSection({ setState }, { setState: any }) {
             "S3",
             "SQl lite",
           ]}
-          image="https://deistor4v34pj.cloudfront.net/2024-10-05T12-04-02.367Z-Screenshot%202024-10-01%20182645.png"
+          image="https://deistor4v34pj.cloudfront.net/2025-04-16T19-26-01.955Z-Screenshot 2025-04-16 212459.png"
           clientLink="https://www.bahri.sa/"
           link="https://magnificent-marshmallow-687391.netlify.app/"
           index={1}
         />
-        <OneProject
+        {/* <OneProject
           name="Platinum Ai"
           description="Platinum Ai is a edu tech start up for egyptian colleges that help students taking notes finding courses and more with many ai features"
           client="egyptain edu tech start up"
           stack={["React", "Node js", "MongoDB", "Express", "TailwindCSS"]}
           image="https://deistor4v34pj.cloudfront.net/2024-10-06T06-12-40.149Z-Screenshot 2024-10-06 090104.png"
           index={2}
-        />
+        /> */}
         <OneProject
           name="RoboCup app"
           description="application that simulates and help judges track and trace there teams with a judge dashboard to manage the robocup competition"

@@ -88,7 +88,7 @@ export default function Home() {
         scrollBehavior: "smooth",
       }}
     >
-      <SpringModal isOpen={openModal} setIsOpen={setOpenModal} />
+      {/* <SpringModal isOpen={openModal} setIsOpen={setOpenModal} /> */}
       <HomeNavBar index={0} />
       <LeftSideNav
         Links={Mylinks}
