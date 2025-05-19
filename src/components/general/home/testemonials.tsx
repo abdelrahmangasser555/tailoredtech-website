@@ -18,30 +18,33 @@ export function InfiniteMovingCardsTestemonials() {
 
 const testimonials = [
   {
-    quote: "the ai automation saved me tons of dirty work in my office",
-    name: "abdelrahman gasser",
-    title: "Founder of tailored tech",
-  },
-  {
-    quote: "I believe in you and your team (the sky is your limit)",
-    name: "Dr mohamed el harthy",
-    title: "Founder of Marafek",
+    quote:
+      "We create tailored software solutions designed specifically for your unique business needs and challenges.",
+    name: "Custom Development",
+    title: "Personalized Solutions",
   },
   {
     quote:
-      "I am so happy with the results, I will definitely recommend you to my friends",
-    name: "Ossama amin",
-    title: "founder of daas ai",
+      "Our AI automation systems streamline workflows and eliminate repetitive tasks across your organization.",
+    name: "AI Integration",
+    title: "Smart Business Processes",
   },
   {
     quote:
-      "35 people have worked on that system before and they didn't accomplish what you did",
-    name: "Gasser Hassan",
-    title: "super intendant at Bahri",
+      "We design intuitive user interfaces that enhance user experience and drive customer engagement.",
+    name: "UX/UI Design",
+    title: "User-Centered Approach",
   },
   {
-    quote: "you really create a wonderful experience for the user",
-    name: "every one saud that",
-    title: "",
+    quote:
+      "Our enterprise solutions seamlessly integrate with your existing systems while adding powerful new capabilities.",
+    name: "Enterprise Solutions",
+    title: "Scalable Architecture",
+  },
+  {
+    quote:
+      "We provide continuous support and maintenance to ensure your software evolves alongside your business needs.",
+    name: "Ongoing Support",
+    title: "Long-term Partnership",
   },
 ];

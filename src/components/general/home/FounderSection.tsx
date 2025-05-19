@@ -102,7 +102,7 @@ export default function FounderSection({ setState }, { setState: any }) {
         <div className=" w-[100%] min-w-[40vw]">
           <BackgroundBlur />
           <Image
-            src="https://deistor4v34pj.cloudfront.net/2024-10-18T16-37-17.110Z-shorse image proffesional.jpg"
+            src="https://deistor4v34pj.cloudfront.net/2025-05-19T06-05-45.006Z-joe%20image.jpg"
             alt="yusuf emad image"
             className="rounded-full h-50 w-50"
             width={500}
