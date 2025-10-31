@@ -40,7 +40,7 @@ export default function FounderSection({ setState }, { setState: any }) {
           <span
             className={`mobileHeadings ${poppins.className} text-[100px] text-[white] font-extrabold`}
           >
-            Founders
+            Founder
             <span className="text-[#13ffaa]">.</span>
           </span>
         </GreenThingyWrapper>
@@ -52,11 +52,11 @@ export default function FounderSection({ setState }, { setState: any }) {
       <CrissCrossFounder
         title="Abdelrahman Gasser"
         description={
-          "I am a software engineer with a passion for creating software solutions that help businesses grow and scale. I have experience in creating software solutions for various industries, including healthcare, finance, and e-commerce. I am always looking for new challenges and opportunities to learn and grow."
+          "Entrepreneur , Full Stack Developer  , Founder "
         }
         linkedin="https://www.linkedin.com/in/abdelrahman-gasser-74571127b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
         github="https://github.com/abdelrahmangasser555"
-        website="https://gasserportofolio.netlify.app/"
+        website="https://abdelrahmangasser.tailoredtech.tech/"
         email="abdelrahmangasser2023@gmail.com"
         mainIcon={[
           // eslint-disable-next-line react/jsx-key
@@ -73,7 +73,7 @@ export default function FounderSection({ setState }, { setState: any }) {
       >
         <div className=" w-[100%] min-w-[40vw]">
           <Image
-            src="https://deistor4v34pj.cloudfront.net/2025-04-16T19-19-07.751Z-gasser 1.jpg"
+            src="/images/boody.jpg"
             alt="Abdelrahman Gasser"
             className="rounded-full h-50 w-50 md:ml-[10vw] sm:ml-0"
             width={500}
@@ -81,35 +81,7 @@ export default function FounderSection({ setState }, { setState: any }) {
           />
         </div>
       </CrissCrossFounder>
-      <CrissCrossFounder
-        title="Yusuf Emad"
-        description={
-          "I am a full stack developer and entrepreneur I like building cool web apps with ai "
-        }
-        linkedin="https://www.linkedin.com/in/yusuf-emad-26561b1b2"
-        github="https://github.com/YusufEmad04"
-        facebook="https://www.facebook.com/yuzarcif.putivar?mibextid=ZbWKwL"
-        email="yusufy2004@gmail.com"
-        mainIcon={[
-          // eslint-disable-next-line react/jsx-key
-          <GiHorseHead className="text-blue-700 text-4xl" />,
-          <FaCloud className="text-[#13ffaa] text-4xl" />,
-          <BsSuitDiamond className=" text-teal-200 text-4xl" />,
-        ]}
-        roles={["Dev ops", "Entrepreneur", "Co-Founder", "Cat lover 🐱"]}
-        reverse
-      >
-        <div className=" w-[100%] min-w-[40vw]">
-          <BackgroundBlur />
-          <Image
-            src="https://deistor4v34pj.cloudfront.net/2025-05-19T06-05-45.006Z-joe%20image.jpg"
-            alt="yusuf emad image"
-            className="rounded-full h-50 w-50"
-            width={500}
-            height={500}
-          />
-        </div>
-      </CrissCrossFounder>
+      
       {/* <CrissCrossFounder
         title="Fares Wael"
         description={

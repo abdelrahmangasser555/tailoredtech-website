@@ -1,20 +1,30 @@
 "use client";
 import React from "react";
 import { AnimatedTooltip } from "@/components/acernityComponents/animatedTooltip";
-const people = [
+const people =[
   {
     id: 1,
     name: "Abdelrahman Gasser",
-    designation: "Founder + Full Stack Developer",
-    image:
-      "https://deistor4v34pj.cloudfront.net/tailored+tech+profile+pictures/profile+1.jpg",
+    designation: "Founder & CEO",
+    image: "/images/boody.jpg",
   },
   {
     id: 2,
-    name: "Yusuf Emad",
-    designation: "Founder + DevOps",
-    image:
-      "https://deistor4v34pj.cloudfront.net/tailored+tech+profile+pictures/shorse+whats+app+rprofile.jpg",
+    name: "Gasser Mahmoud",
+    designation: "Full Stack Developer",
+    image: "/images/gasser mahmoud.png",
+  },
+  {
+    id: 3,
+    name: "Fares Wael",
+    designation: "Full Stack Developer",
+    image: "/images/fares.png",
+  },
+  {
+    id: 4,
+    name: "Ahmed Tamer",
+    designation: "UI&UX Designer",
+    image: "/images/moshka.png",
   },
 ];
 

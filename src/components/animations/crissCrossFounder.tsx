@@ -101,7 +101,7 @@ export function CrissCrossFounder({
         )}
         <div className="flex flex-col items-start space-y-10">
           {/* Description Section */}
-          <div className="p-6 bg-opacity-5 bg-black rounded-lg shadow-lg w-full">
+          <div className="p-6  rounded-lg  w-full">
             <p className="text-white text-lg font-semibold pl-3  pb-2 flex items-center justify-start">
               Bio<span className="text-[#13ffaa] mr-1 ">.</span>
             </p>

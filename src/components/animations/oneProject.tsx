@@ -36,13 +36,13 @@ export default function OneProject({
 }: OneProjectProps) {
   return (
     <motion.div
-      className="flex flex-col items-center justify-center  text-white"
+      className="flex flex-col items-center justify-center h-full  text-white"
       initial={{ opacity: 0, x: -100 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 1 }}
       viewport={{ once: true }}
     >
-      <div className="bg-green/30 backdrop-blur-lg rounded-lg p-10 shadow-lg overflow-hidden mb-5">
+      <div className=" rounded-lg p-10  overflow-hidden mb-5">
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}

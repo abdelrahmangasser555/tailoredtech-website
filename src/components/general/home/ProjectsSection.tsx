@@ -51,7 +51,7 @@ export default function ProjectsSection({ setState }, { setState: any }) {
             "TailwindCSS",
             "Daisy Ui",
           ]}
-          image="https://deistor4v34pj.cloudfront.net/2024-10-06T05-55-46.889Z-Screenshot 2024-10-06 085451.png"
+          image="/images/daasLogo.svg"
           link="https://ai-daas.com/"
           index={4}
         />
@@ -70,9 +70,29 @@ export default function ProjectsSection({ setState }, { setState: any }) {
             "S3",
             "SQl lite",
           ]}
-          image="https://deistor4v34pj.cloudfront.net/2025-04-16T19-26-01.955Z-Screenshot 2025-04-16 212459.png"
+          image="/images/ra.tailoredtech.tech_login.png"
           clientLink="https://www.bahri.sa/"
-          link="https://magnificent-marshmallow-687391.netlify.app/"
+         
+          index={1}
+        />
+        <OneProject
+          name="MOC&PCR"
+          description="Management of change and procedure change request"
+          client="Bahri Saudi Arabia"
+          stack={[
+            "React",
+            "Node js",
+            "MongoDB",
+            "Mongo Atlas",
+            "Express",
+            "TailwindCSS",
+            "Daisy ui",
+            "S3",
+            "SQl lite",
+          ]}
+          image="/images/moc.png"
+          clientLink="https://www.bahri.sa/"
+         
           index={1}
         />
         {/* <OneProject
@@ -83,21 +103,7 @@ export default function ProjectsSection({ setState }, { setState: any }) {
           image="https://deistor4v34pj.cloudfront.net/2024-10-06T06-12-40.149Z-Screenshot 2024-10-06 090104.png"
           index={2}
         /> */}
-        <OneProject
-          name="RoboCup app"
-          description="application that simulates and help judges track and trace there teams with a judge dashboard to manage the robocup competition"
-          client="RoboCup egypt"
-          stack={[
-            "flutter",
-            "python",
-            "dynamo db",
-            "db relationships",
-            "user groups",
-            "OAuth",
-          ]}
-          image="https://deistor4v34pj.cloudfront.net/2024-10-10T19-45-02.984Z-Screenshot 2024-10-10 224452.png"
-          index={3}
-        />
+        
         {/* <OneProject
           name="Platinum Ai"
           description="Platinum Ai is a software solution that helps businesses automate their processes and improve their efficiency. It uses artificial intelligence to analyze data and make predictions, helping businesses make better decisions and grow faster."

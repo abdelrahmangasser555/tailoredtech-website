@@ -77,7 +77,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     >
       <BackgroundBlur />
       <div
-        className="flex flex-col items-center justify-center h-[50rem]  "
+        className="flex flex-col items-center justify-center h-[40rem]  "
         style={{
           scrollBehavior: "smooth",
           scrollMarginTop: "10vh",

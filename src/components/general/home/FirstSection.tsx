@@ -19,7 +19,7 @@ export default function FirstSection({
         {new Array(1000).fill(0).map((_, i) => (
           <div
             key={i}
-            className=" h-4 w-4 text-white  cursor-crosshair hover:text-[#0aff9d] hover:bg-slate-400 flex items-end justify-center text-2xl transition-all  duration-[2s] ease-out opacity-50 hover:opacity-100"
+            className=" h-4 w-4 text-white  cursor-crosshair hover:text-[#0aff9d] hover:bg-slate-400 flex items-end justify-center text-2xl transition-all  duration-[2s] ease-out opacity-50 hover:opacity-100 "
           >
             .
           </div>

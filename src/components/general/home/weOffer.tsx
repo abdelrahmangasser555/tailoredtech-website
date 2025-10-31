@@ -78,9 +78,7 @@ export default function WeOffer({ setState }, { setState: any }) {
           <MdOutlineComputer className=" text-[#13ffaa]" size={40} />,
         ]}
       >
-        <div className="w-[100%]">
-          <CompareHome />
-        </div>
+       
       </CrissCross>
       <CrissCross
         title="From Ideas to Products"

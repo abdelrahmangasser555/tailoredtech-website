@@ -114,7 +114,7 @@ export default function Home() {
                 fontWeight: "400",
               }}
             >
-              Creating{" "}
+              Crafting{" "}
               <AnimatedLineWithText>
                 <span
                   className="
@@ -199,13 +199,7 @@ export default function Home() {
               </span>
             </p>
           </GreenThingyWrapper>
-          <GreenThingyWrapper setState={null}>
-            <p className=" no-display-laptops  text-white md:max-w-[60%] sm:w-[100%] pl-4 mt-5">
-              we created software solutions for large multi national companies
-              in different sectors and we are ready to help you with your next
-              project
-            </p>
-          </GreenThingyWrapper>
+         
           <GreenThingyWrapper setState={null}>
             <Button
               className={buttonVariants({ variant: "outline" })}
